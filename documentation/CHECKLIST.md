@@ -29,5 +29,4 @@ Main navigation:
 - [ ] My Card
   - [ ] Log In
   - [ ] Register
-  - [ ] Activate
 
