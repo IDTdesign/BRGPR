@@ -30,7 +30,7 @@ There are 3 environments in the project:
 
 1. **Development** — default environment. No minification or concatenation on styles and scripts. Default Modernizr.js. 
 2. **Preview** — optimized for faster loading. All styles merged one file and minified. Same with scripts, output script uses custom Modernizr build. HTML minified and GZIPped.
-3. **Static** — same as static but generated site uses direct urls for http://IDTdesign.github.io/BRGPR
+3. **Static** — same as preview but generated site uses direct urls for http://IDTdesign.github.io/BRGPR
 
 ## Publishing
 
