@@ -215,7 +215,6 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-contrib-imagemin'
 	grunt.loadNpmTasks 'grunt-recess'
 	grunt.loadNpmTasks 'grunt-html'
-	grunt.loadNpmTasks 'load-grunt-tasks'
 
 	# Register our Grunt tasks.
 	# grunt.registerTask 'deploy',        ['ftp-deploy']
