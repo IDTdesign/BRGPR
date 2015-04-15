@@ -1,0 +1,23 @@
+{
+  "name": "BRGPR",
+  "version": "0.1.0",
+  "homepage": "https://github.com/IDTdesign/BRGPR",
+  "authors": [
+    "Paul Radzkov <radzkov@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3"
+  }
+}

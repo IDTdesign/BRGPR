@@ -1,0 +1,10 @@
+---
+layout: 'default'
+title: ''
+---
+
+
+<h1>Hello world</h1>
+
+
+<% #comment %>
