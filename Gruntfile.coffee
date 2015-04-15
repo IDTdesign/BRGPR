@@ -111,6 +111,18 @@ module.exports = (grunt) ->
 					includePath: 'mixed'          # Additional paths to look for `@import`'ed LESS files.  Accepts a string or an array of strings.
 				src: ['src/documents/css/*.less']
 
+		# HTML5 validation
+		htmllint:
+			all:
+				expand: true
+				cwd: 'out/'
+				src: [
+					'*.html'
+					'!google*.html'
+					'!yandex*.html'
+				]
+
+
 		#clean files
 		clean:
 			less:
@@ -202,11 +214,12 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-newer'
 	grunt.loadNpmTasks 'grunt-contrib-imagemin'
 	grunt.loadNpmTasks 'grunt-recess'
+	grunt.loadNpmTasks 'grunt-html'
 	grunt.loadNpmTasks 'load-grunt-tasks'
 
 	# Register our Grunt tasks.
 	# grunt.registerTask 'deploy',        ['ftp-deploy']
-	grunt.registerTask 'lint',          ['recess']
+	grunt.registerTask 'lint',          ['recess', 'htmllint']
 	grunt.registerTask 'imageoptim',    ['newer:imagemin:src']
 	grunt.registerTask 'production',    ['default', 'cssmin', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean']
 	grunt.registerTask 'default',       ['copy', 'autoprefixer']
