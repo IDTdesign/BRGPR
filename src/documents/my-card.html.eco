@@ -1,0 +1,10 @@
+---
+layout: 'default'
+title: 'My Card'
+---
+
+
+<h1>My Card</h1>
+
+
+<% #comment %>
