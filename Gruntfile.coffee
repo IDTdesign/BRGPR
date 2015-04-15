@@ -72,6 +72,27 @@ module.exports = (grunt) ->
 					dest: 'out/'
 				]
 
+		# optimize images if possible
+		imagemin:
+			out:
+				options:
+					optimizationLevel: 2,
+				files: [
+					expand: true,
+					cwd: 'out/img/',
+					src: ['**/*.{png,jpg,gif,svg}'],
+					dest: 'out/img/'
+				]
+			src:
+				options:
+					optimizationLevel: 2,
+				files: [
+					expand: true,
+					cwd: 'src/files/img/',
+					src: ['**/*.{png,jpg,jpeg,gif,svg}'],
+					dest: 'src/files/img/'
+				]
+
 		#clean files
 		clean:
 			less:
@@ -160,8 +181,11 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-modernizr'
 	grunt.loadNpmTasks 'grunt-ftp-deploy'
 	grunt.loadNpmTasks 'grunt-contrib-copy'
+	grunt.loadNpmTasks 'grunt-newer'
+	grunt.loadNpmTasks 'grunt-contrib-imagemin'
 
 	# Register our Grunt tasks.
 	# grunt.registerTask 'deploy',        ['ftp-deploy']
-	grunt.registerTask 'production',    ['default', 'cssmin', 'htmlmin', 'modernizr', 'uglify', 'clean']
+	grunt.registerTask 'imageoptim',    ['newer:imagemin:src']
+	grunt.registerTask 'production',    ['default', 'cssmin', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean']
 	grunt.registerTask 'default',       ['copy', 'autoprefixer']
