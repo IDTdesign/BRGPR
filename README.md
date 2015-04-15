@@ -20,7 +20,7 @@
 
 `docpad run` — to start locally
 
-`docpad run --env static` — to preview optimized version
+`docpad run --env preview` — to preview optimized version
 
 `docpad deploy-ghpages --env static` — publish to http://IDTdesign.github.io/BRGPR
 
