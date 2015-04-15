@@ -93,6 +93,24 @@ module.exports = (grunt) ->
 					dest: 'src/files/img/'
 				]
 
+		# Lint LESS files
+		recess:
+			dist:
+				options:
+					# Default
+					compile: false              # Compiles CSS or LESS. Fixes white space and sort order.
+					compress: false             # Compress your compiled code
+					noIDs: true                 # Doesn't complain about using IDs in your stylesheets
+					noJSPrefix: true            # Doesn't complain about styling .js- prefixed classnames
+					noOverqualifying: true      # Doesn't complain about overqualified selectors (ie: div#foo.bar)
+					noUnderscores: true         # Doesn't complain about using underscores in your class names
+					noUniversalSelectors: true  # Doesn't complain about using the universal * selector
+					prefixWhitespace: true      # Adds whitespace prefix to line up vender prefixed properties
+					strictPropertyOrder: true   # Complains if not strict property order
+					zeroUnits: true             # Doesn't complain if you add units to values of 0
+					includePath: 'mixed'          # Additional paths to look for `@import`'ed LESS files.  Accepts a string or an array of strings.
+				src: ['src/documents/css/*.less']
+
 		#clean files
 		clean:
 			less:
@@ -183,9 +201,12 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-contrib-copy'
 	grunt.loadNpmTasks 'grunt-newer'
 	grunt.loadNpmTasks 'grunt-contrib-imagemin'
+	grunt.loadNpmTasks 'grunt-recess'
+	grunt.loadNpmTasks 'load-grunt-tasks'
 
 	# Register our Grunt tasks.
 	# grunt.registerTask 'deploy',        ['ftp-deploy']
+	grunt.registerTask 'lint',          ['recess']
 	grunt.registerTask 'imageoptim',    ['newer:imagemin:src']
 	grunt.registerTask 'production',    ['default', 'cssmin', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean']
 	grunt.registerTask 'default',       ['copy', 'autoprefixer']

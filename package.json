@@ -1,6 +1,7 @@
 {
   "name": "BRGPR",
   "version": "0.1.0",
+  "repository": "https://github.com/IDTdesign/BRGPR.git",
   "description": "BOSS Revolution Prepaid MasterCard",
   "dependencies": {
     "docpad": "~6.78.1",
@@ -32,7 +33,9 @@
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-ftp-deploy": "^0.1.9",
     "grunt-modernizr": "^0.6.0",
-    "grunt-newer": "^1.1.0"
+    "grunt-newer": "^1.1.0",
+    "grunt-recess": "^1.0.1",
+    "load-grunt-tasks": "^3.1.0"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
