@@ -14,6 +14,16 @@ module.exports = (grunt) ->
 			files: [ './src/**/*.*' ]
 			out: ['out']
 
+		# copy vendor files [destination:source]
+		copy:
+			main:
+				files: [
+					'out/vendor/normalize.css':'bower_components/normalize.css/normalize.css'
+					'out/vendor/modernizr.js':'bower_components/modernizr/modernizr.js'
+					#'out/vendor/jquery.scrollTo/jquery.scrollTo.min.js':'bower_components/jquery.scrollTo/jquery.scrollTo.min.js'
+					#'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js'
+				]
+
 		# add vendor prefixes
 		autoprefixer:
 			options:
@@ -29,7 +39,19 @@ module.exports = (grunt) ->
 		cssmin:
 			combine:
 				files:
-					'out/css/template.css':'out/css/template.css'
+					'out/css/output.min.css':[
+						'out/vendor/normalize.css'
+						'out/css/template.css'
+					]
+
+		#minify js
+		uglify:
+			out:
+				files:
+					'out/js/output.min.js':[
+						'out/vendor/modernizr-custom.js'
+						'out/js/init.js'
+					]
 
 		#minify html
 		htmlmin:
@@ -50,26 +72,19 @@ module.exports = (grunt) ->
 					dest: 'out/'
 				]
 
-		#minify js
-		uglify:
-			out:
-				files:
-					'out/js/output.min.js':[
-						'out/js/script.js'
-					]
-
 		#clean files
 		clean:
 			less:
 				'out/css/*.less'
 
+		#generates custom modernizr build from site css
 		modernizr:
 			dist:
 				# [REQUIRED] Path to the build you're using for development.
 				devFile: "bower_components/modernizr/modernizr.js"
 
 				# Path to save out the built file.
-				outputFile: "src/files/vendor/modernizr.js"
+				outputFile: "out/vendor/modernizr-custom.js"
 
 				# Based on default settings on http://modernizr.com/download/
 				extra:
@@ -144,8 +159,9 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-contrib-uglify'
 	grunt.loadNpmTasks 'grunt-modernizr'
 	grunt.loadNpmTasks 'grunt-ftp-deploy'
+	grunt.loadNpmTasks 'grunt-contrib-copy'
 
 	# Register our Grunt tasks.
 	# grunt.registerTask 'deploy',        ['ftp-deploy']
-	grunt.registerTask 'production',    ['default', 'cssmin', 'htmlmin', 'uglify', 'clean']
-	grunt.registerTask 'default',       ['autoprefixer']
+	grunt.registerTask 'production',    ['default', 'cssmin', 'htmlmin', 'modernizr', 'uglify', 'clean']
+	grunt.registerTask 'default',       ['copy', 'autoprefixer']

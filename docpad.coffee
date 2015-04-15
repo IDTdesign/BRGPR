@@ -13,8 +13,6 @@ docpadConfig = {
 
 		# Specify some site properties
 		site:
-			# The staging url of the website
-			url: "http://idtdesign.github.io/BRGPR/"
 
 			# Here are some old site urls that you would like to redirect from
 			# oldUrls: [
@@ -39,17 +37,6 @@ docpadConfig = {
 			googleAnalyticsId: ""
 
 			googleAnalyticsDomain: ""
-
-			# The website's styles
-			styles: [
-				'/css/template.css'
-			]
-
-			# The website's production scripts.
-			# See also Environments section below for development scripts
-			scripts: [
-				'/js/output.min.js'
-			]
 
 		# -----------------------------
 		# Helper Functions
@@ -138,14 +125,6 @@ docpadConfig = {
 			static: true
 			trailingSlashes: true
 
-		grunt:
-			#writeAfter: ["production"]
-			writeBefore: false
-			renderBefore: false
-			renderAfter: false
-			generateBefore: false
-			generateAfter: false
-
 		prezip:
 			# Files with compression ratios below this value are not kept.
 			ratio: 0.95
@@ -187,28 +166,79 @@ docpadConfig = {
 			deployRemote: 'deploy'
 			deployBranch: 'gh-pages'
 
+
+
 	# =================================
 	# DocPad Environments settings
 
 	environments:
+
 		development:
 			templateData:
 				site:
-					url: 'http://localhost:9778'
+					url: ''
 
-					# The website's scripts
+					# Development styles
+					styles: [
+						'/vendor/normalize.css'
+						'/css/template.css'
+					]
+
+					# Development scripts
 					scripts: [
+						'/vendor/modernizr.js'
+						'/js/init.js'
 					]
 
 			plugins:
 				grunt:
 					writeAfter: ["default"]
-					#writeAfter: false
 					writeBefore: false
 					renderBefore: false
 					renderAfter: false
 					generateBefore: false
 					generateAfter: false
+
+		static:
+			templateData:
+				site:
+					url: ''
+
+					# The website's styles
+					# See also Environments section below for development styles
+					styles: [
+						'/css/output.min.css'
+					]
+
+					# The website's production scripts.
+					# See also Environments section below for development scripts
+					scripts: [
+						'/js/output.min.js'
+					]
+
+			plugins:
+				grunt:
+					writeAfter: ["production"]
+
+		prod:
+			templateData:
+				site:
+					url: 'http://idtdesign.github.io/BRGPR'
+
+					# Development styles
+					styles: [
+						'/css/output.min.css'
+					]
+
+					# Development scripts
+					scripts: [
+						'/js/output.min.js'
+					]
+
+			plugins:
+				grunt:
+					writeAfter: ["production"]
+
 
 
 	# =================================
