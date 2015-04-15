@@ -199,7 +199,7 @@ docpadConfig = {
 					generateBefore: false
 					generateAfter: false
 
-		static:
+		preview:
 			templateData:
 				site:
 					url: ''
@@ -220,7 +220,7 @@ docpadConfig = {
 				grunt:
 					writeAfter: ["production"]
 
-		prod:
+		static:
 			templateData:
 				site:
 					url: 'http://idtdesign.github.io/BRGPR'
