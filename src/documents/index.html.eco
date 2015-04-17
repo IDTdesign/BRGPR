@@ -3,7 +3,7 @@ layout: 'default'
 title: ''
 ---
 
-<article class="cover cover-1">
+<article class="cover cover-a1">
     <div class="cover--content">
         <h2>Your Cash. Your WaY.</h2>
         <p>Boss revolution Prepaid Mastercard®
@@ -11,7 +11,7 @@ title: ''
         <h1>Boss Revolution Prepaid MasterCard</h1>
     </div>
 </article>
-<article class="cover cover-2">
+<article class="cover cover-a2">
     <div class="cover--content">
         <h1>A CARD for all your needs</h1>
         <ul>
@@ -33,11 +33,11 @@ title: ''
             </li>
         </ul>
         <p id="note-1">
-            Not available for all cards. Depend on level of the card.
+            <small>* Not available for all cards. Depend on level of the card.</small>
         </p>
     </div>
 </article>
-<article class="cover cover-3">
+<article class="cover cover-a3">
     <div class="cover--content">
         <h2>Make everyday purchases,
         <br>pay bills and shop online,
@@ -45,7 +45,7 @@ title: ''
         <br>the MasterCard Acceptance Mark</h2>
     </div>
 </article>
-<article class="cover cover-4">
+<article class="cover cover-a4">
     <div class="cover--content">
         <h2>Share your money instantly by
         <br> sending a second card to your family
@@ -53,7 +53,7 @@ title: ''
         <br> the benefits of your card</h2>
     </div>
 </article>
-<article class="cover cover-5">
+<article class="cover cover-a5">
     <div class="cover--content">
         <h1>Join Boss Revolution Prepaid MasterCard</h1>
         <ul>
@@ -70,7 +70,7 @@ title: ''
         </p>
     </div>
 </article>
-<article class="cover cover-6">
+<article class="cover cover-a6">
     <div class="cover--content">
         <h1>Free rewards</h1>
         <p>Free personalised card when buying or upgrading here <a href="#note-2">*</a></p>
@@ -78,10 +78,10 @@ title: ''
         <p>£0FEE during the first month</p>
         <p>Use your promo code to get 3 months free. Look for Boss Revolution Promo Codes and enjoy special features when buying or upgrading your card</p>
 
-        <p id="note-2"><small>* — If you buy and reload online with more than £30</small></p>
+        <p id="note-2"><small>* If you buy and reload online with more than £30</small></p>
     </div>
 </article>
-<article class="cover cover-7">
+<article class="cover cover-a7">
     <div class="cover--content">
         <h1>Services available for you in just one click!</h1>
         <ul>
@@ -94,3 +94,6 @@ title: ''
         </ul>
     </div>
 </article>
+
+
+<% #comment %>

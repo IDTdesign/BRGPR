@@ -36,8 +36,12 @@
         <div class="allpage--body">
             <%- @content %>
         </div>
-        <footer class="allpage--footer">
-
+        <footer class="allpage--footer footer">
+            <div class="footer--nav">
+                <p class="footer--left"><a href="<%= @getUrl('/questions/#TnCs') %>" class="footer--links">Terms and Conditions</a> <a href="<%= @getUrl('/questions/#TnCs') %>" class="footer--links">Privacy Policy</a></p>
+                <p class="footer--right">© BOSS Revolution 2015</p>
+            </div>
+            <p class="legal-notes">The Boss Revolution Prepaid MasterCard is issued by IDT Financial Services Limited pursuant to a license from MasterCard International Incorporated. MasterCard and the MasterCard Brand Mark are registered trademarks of MasterCard International Incorporated. IDT Financial Services Limited is a regulated bank, licensed by the Financial Services Commission, Gibraltar. Registered Office: 57-63 Line Wall Road, Gibraltar. Registered No. 95716. All communications should be sent to IDT Financial Services Limited, PO Box 1374, Gibraltar.</p>
         </footer>
     </div>
 
