@@ -3,8 +3,94 @@ layout: 'default'
 title: ''
 ---
 
+<article class="cover cover-1">
+    <div class="cover--content">
+        <h2>Your Cash. Your WaY.</h2>
+        <p>Boss revolution Prepaid Mastercard®
+        <br>is the only card you’ll ever need in your wallet</p>
+        <h1>Boss Revolution Prepaid MasterCard</h1>
+    </div>
+</article>
+<article class="cover cover-2">
+    <div class="cover--content">
+        <h1>A CARD for all your needs</h1>
+        <ul>
+            <li>
+                <h3>Express</h3>
+                <p>buy it in more than 20,000 locations</p>
+            </li>
+            <li>
+                <h3>Personal Plus</h3>
+                <p>make everyday purchase anywhere</p>
+            </li>
+            <li>
+                <h3>Personal Max <a href="#note-1">*</a></h3>
+                <p>reloadable up to 12,000 per year</p>
+            </li>
+            <li>
+                <h3>Family <a href="#note-1">*</a></h3>
+                <p>two cards for sharing money Instantly</p>
+            </li>
+        </ul>
+        <p id="note-1">
+            Not available for all cards. Depend on level of the card.
+        </p>
+    </div>
+</article>
+<article class="cover cover-3">
+    <div class="cover--content">
+        <h2>Make everyday purchases,
+        <br>pay bills and shop online,
+        <br>anywhere you see
+        <br>the MasterCard Acceptance Mark</h2>
+    </div>
+</article>
+<article class="cover cover-4">
+    <div class="cover--content">
+        <h2>Share your money instantly by
+        <br> sending a second card to your family
+        <br> or friends abroad. They will enjoy all
+        <br> the benefits of your card</h2>
+    </div>
+</article>
+<article class="cover cover-5">
+    <div class="cover--content">
+        <h1>Join Boss Revolution Prepaid MasterCard</h1>
+        <ul>
+            <li>Reloadable</li>
+            <li>No credit checks - No hidden fees - No bank account</li>
+            <li>First Month FREE</li>
+            <li>Online and offline shopping</li>
+            <li>Add funds in over 20,000 locations across UK</li>
+        </ul>
+        <p>
+            <a href="#" class="btn">Buy Now</a>
+            <a href="#" class="btn">Upgrade Now</a>
+            <a href="#" class="btn">Register Now</a>
+        </p>
+    </div>
+</article>
+<article class="cover cover-6">
+    <div class="cover--content">
+        <h1>Free rewards</h1>
+        <p>Free personalised card when buying or upgrading here <a href="#note-2">*</a></p>
+        <p>International Calls. Receive up to 100 minutes FREE on every card load</p>
+        <p>£0FEE during the first month</p>
+        <p>Use your promo code to get 3 months free. Look for Boss Revolution Promo Codes and enjoy special features when buying or upgrading your card</p>
 
-<h1>Hello world</h1>
-
-
-<% #comment %>
+        <p id="note-2"><small>* — If you buy and reload online with more than £30</small></p>
+    </div>
+</article>
+<article class="cover cover-7">
+    <div class="cover--content">
+        <h1>Services available for you in just one click!</h1>
+        <ul>
+            <li>Buy it and load money instantly</li>
+            <li>Get you free personalized card now</li>
+            <li>Share a card with your loved ones</li>
+            <li>Manage your finances, follow your expenses</li>
+            <li>Store locator: more than 20.000 locations</li>
+            <li>Earn Free minutes to call back home</li>
+        </ul>
+    </div>
+</article>

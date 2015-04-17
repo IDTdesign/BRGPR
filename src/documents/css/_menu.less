@@ -1,0 +1,104 @@
+//defaults
+@mnu_h: 30px;
+@mnu_fz: 14px;
+
+//mainmenu
+@mainmenu_h: 70px;
+@mainmenu_fz: 16px;
+@mainmenu_txt_c: #FFF;
+
+//submenu
+@submenu_bg: #f50000;
+@submenu_c: #FFF;
+
+//topmenu
+@topmenu_h: 50px;
+@topmenu_fz: 14px;
+@topmenu_txt_c: #FFF;
+
+.menu,
+.submenu,
+.topmenu {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu--item {
+    position: relative;
+    display: block;
+}
+
+.menu > .menu--item {
+    float: left;
+}
+
+.menu--link {
+    display: block;
+    text-decoration: none;
+}
+
+.menu--text {
+    display: block;
+    font-size: @mnu_fz;
+    padding: ((@mnu_h - @mnu_fz) / 2) (@mnu_h - @mnu_fz);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+//menu
+
+.menu {
+    font-size: @mainmenu_fz;
+    line-height: 1;
+
+    .menu--text {
+        color: @mainmenu_txt_c;
+    }
+
+    @media (min-width: 768px) {
+
+        & > .menu--item > .menu--link > .menu--text {
+            font-size: @mainmenu_fz;
+        }
+    }
+}
+
+//submenu
+
+.submenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 100%;
+    padding: 16px 0;
+    background: @submenu_bg;
+    border-radius: 2px;
+
+    .menu--item {
+        display: block;
+    }
+}
+
+.menu--item:hover .submenu {
+    display: block;
+}
+
+//topmenu
+
+.topmenu {
+    font-size: @topmenu_fz;
+    line-height: 1;
+
+    > .menu--item {
+        float: left;
+    }
+
+    .menu--text {
+        padding: (@topmenu_h - @topmenu_fz) / 2;
+        color: @topmenu_txt_c;
+    }
+}

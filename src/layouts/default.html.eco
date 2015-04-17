@@ -3,12 +3,12 @@
 <head>
     <!-- Standard Meta -->
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
     <!-- Site Properities -->
     <title><%= @getPreparedTitle() %></title>
     <meta name="description" content="<%= @getPreparedDescription() %>" />
     <meta name="keywords" content="<%= @getPreparedKeywords() %>" />
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
     <!-- DocPad Meta -->
     <%- @getBlock('meta').toHTML() %>
@@ -22,8 +22,24 @@
 
 </head>
 <body>
+    <div class="allpage">
+        <header class="allpage--header">
+            <div class="pageheader">
+                <a href="<%= @getUrl('/') %>" class="sitelogo <%- @isActive('/') %>">
+                    <img src="<%- @getUrl('/img/bossrevolution-logo.svg') %>" width="95" height="100" alt="BOSS Revolution® logo">
+                </a>
+                <img src="<%- @getUrl('/img/mastercard-logo.svg') %>" width="92" height="55" class="mastercard" alt="MasterCard logo">
+                <nav class="mainnav"><%- @partial('mainnav') %></nav>
+                <nav class="loginmenu"><%- @partial('topnav') %></nav>
+            </div>
+        </header>
+        <div class="allpage--body">
+            <%- @content %>
+        </div>
+        <footer class="allpage--footer">
 
-    <%- @content %>
+        </footer>
+    </div>
 
     <!-- DocPad Scripts + Our Own -->
     <%- @getBlock('scripts').add([].concat(@getUrl(@site.scripts) or []).concat(@getUrl(@document.scripts) or [])).toHTML() %>
