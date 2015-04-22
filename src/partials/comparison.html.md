@@ -1,4 +1,4 @@
-|                                    | Express | Personal PLUS | Perspnal MAX |  Family  |
+|                                    | Express*| Personal PLUS | Personal MAX |  Family  |
 |------------------------------------|--------:|--------------:|-------------:|---------:|
 | **Main Features**                  |         |               |              |          |
 | Annual Load Limit                  |   £ 300 |       £ 1,900 |     £ 12,000 | £ 12,000 |

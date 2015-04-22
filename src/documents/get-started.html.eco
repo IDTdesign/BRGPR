@@ -3,8 +3,61 @@ layout: 'default'
 title: 'Get Started'
 ---
 
+<article class="cover cover-c1" id="buy-now">
+    <div class="cover--content">
+        <h1>Get Ready</h1>
+        <p>You are one step away from getting your Boss Revolution Prepaid MasterCard®</p>
+        <p><a href="<%- @getUrl('/buy-now/') %>" class="btn">Buy Now</a></p>
+    </div>
+</article>
 
-<h1>Get Started</h1>
+<article class="cover cover-c2" id="store-locator">
+    <div class="cover--content">
+        <h1>Store locator</h1>
+        <div class="island">
+            <form action="<%- @getUrl('/get-started/#store-locator') %>">
+                <h3>Find your nearest store</h3>
+                <p>To find your nearest Payzone or Boss Revolution Store please enter a town/city or postcode into the locator search box.</p>
+                <input type="text" name="" id="">
+                <button type="submit">Find nearest</button>
+            </form>
+        </div>
+    </div>
+</article>
 
+<article class="cover cover-c3" id="register-my-card">
+    <div class="cover--content">
+        <h1>Register my card</h1>
+        <p>Make sure you register your Boss Revolution Express card prior to first use</p>
+        <ul>
+            <li>Shop Online</li>
+            <li>Get a replacement card in case you lose your card</li>
+            <li>Adds additional security layer to access your account</li>
+        </ul>
+        <p>Registering your card gives you more benefits; it allows you to shop online, or over the phone. Many companies will require you to provide a name and address when making a transaction. Please make sure that you give correct details.</p>
+        <p><a href="<%= @getUrl('/my-card/register/') %>" class="btn">Register Your Card</a></p>
+</article>
 
+<article class="cover cover-c4" id="upgrade-my-card">
+    <div class="cover--content">
+        <h1>Upgrade your card</h1>
+        <p>Boss Revolution Prepaid MasterCard can give you more than you think</p>
+        <p><a href="<%- @getUrl('/my-card/upgrade/') %>" class="btn">Upgrade Now</a></p>
+    </div>
+</article>
+
+<article class="cover cover-c5" id="quick-start-guide">
+    <div class="cover--content">
+        <h1>Quick start guide</h1>
+        <p>
+            video player here
+        </p>
+        <p>
+            <a href="#video1" class="btn">Buy Now</a>
+            <a href="#video2" class="btn">Upgrade Now</a>
+            <a href="#video3" class="btn">Register Your Card</a>
+            <a href="#promo-code" class="btn">Got a Promo Code?</a>
+        </p>
+    </div>
+</article>
 <% #comment %>

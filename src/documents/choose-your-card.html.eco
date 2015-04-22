@@ -64,7 +64,7 @@ title: 'Choose Your Card'
         <p id="note-3">* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></p>
         <div class="cta">
             <a href="#compare-cards" class="btn-lnk">Compare features</a>
-            <a href="<%- @getUrl('/buy-now/') %>" class="btn">Store Locator</a>
+            <a href="<%- @getUrl('/buy-now/') %>" class="btn">Buy Now</a>
             <a href="<%- @getUrl('/upgrade-now/') %>" class="btn">Upgrade Now</a>
         </div>
     </div>
@@ -89,7 +89,7 @@ title: 'Choose Your Card'
         <p id="note-4">* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></p>
         <div class="cta">
             <a href="#compare-cards" class="btn-lnk">Compare features</a>
-            <a href="<%- @getUrl('/buy-now/') %>" class="btn">Store Locator</a>
+            <a href="<%- @getUrl('/buy-now/') %>" class="btn">Buy Now</a>
             <a href="<%- @getUrl('/upgrade-now/') %>" class="btn">Upgrade Now</a>
         </div>
     </div>
@@ -114,7 +114,7 @@ title: 'Choose Your Card'
         <p id="note-5">* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></p>
         <div class="cta">
             <a href="#compare-cards" class="btn-lnk">Compare features</a>
-            <a href="<%- @getUrl('/buy-now/') %>" class="btn">Store Locator</a>
+            <a href="<%- @getUrl('/buy-now/') %>" class="btn">Buy Now</a>
             <a href="<%- @getUrl('/upgrade-now/') %>" class="btn">Upgrade Now</a>
         </div>
     </div>
@@ -140,6 +140,12 @@ title: 'Choose Your Card'
     <div class="cover--content">
         <h1>One card for every need</h1>
         <%= @partial('comparison') %>
+        <div class="cta cta-comparison">
+            <a href="<%- @getUrl('/buy-now/') %>" class="btn">apply for personal plus</a>
+            <a href="<%- @getUrl('/buy-now/') %>" class="btn">apply for personal max</a>
+            <a href="<%- @getUrl('/buy-now/') %>" class="btn">apply for friends and family</a>
+        </div>
+        <p>* also applicable for the Gift Card</p>
     </div>
 </article>
 
