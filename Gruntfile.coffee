@@ -92,6 +92,15 @@ module.exports = (grunt) ->
 					src: ['**/*.{png,jpg,jpeg,gif,svg}'],
 					dest: 'src/files/img/'
 				]
+			icons:
+				options:
+					optimizationLevel: 2,
+				files: [
+					expand: true,
+					cwd: 'src/files/icons/svg/',
+					src: ['**/*.svg'],
+					dest: 'src/files/icons/svg/'
+				]
 
 		# Lint LESS files
 		recess:
@@ -106,7 +115,7 @@ module.exports = (grunt) ->
 					noUnderscores: true         # Doesn't complain about using underscores in your class names
 					noUniversalSelectors: true  # Doesn't complain about using the universal * selector
 					prefixWhitespace: true      # Adds whitespace prefix to line up vender prefixed properties
-					strictPropertyOrder: true   # Complains if not strict property order
+					strictPropertyOrder: false   # Complains if not strict property order
 					zeroUnits: true             # Doesn't complain if you add units to values of 0
 					includePath: 'mixed'          # Additional paths to look for `@import`'ed LESS files.  Accepts a string or an array of strings.
 				src: ['src/documents/css/*.less']
@@ -187,6 +196,24 @@ module.exports = (grunt) ->
 				# Have custom Modernizr tests? Add paths to their location here.
 				customTests: []
 
+		#create one svg from multiple files
+		svgstore:
+			options:
+				prefix: 'i--'
+				#formatting:
+				#   indent_size: 2
+				includedemo: true
+			default:
+				options:
+					cleanup: ['fill']
+				files: 'src/files/icons/svg-defs.svg':['src/files/icons/svg/*.svg']
+
+		#convert content of svg file to string
+		svg2string:
+			icons:
+				files: 'src/files/icons/svg-icons.js':['src/files/icons/svg-defs.svg']
+
+
 		'ftp-deploy':
 			build:
 				auth:
@@ -215,10 +242,13 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-contrib-imagemin'
 	grunt.loadNpmTasks 'grunt-recess'
 	grunt.loadNpmTasks 'grunt-html'
+	grunt.loadNpmTasks 'grunt-svgstore'
+	grunt.loadNpmTasks 'grunt-svg2string'
 
 	# Register our Grunt tasks.
 	# grunt.registerTask 'deploy',        ['ftp-deploy']
 	grunt.registerTask 'lint',          ['recess', 'htmllint']
+	grunt.registerTask 'svgicons',      ['imagemin:icons', 'svgstore', 'svg2string']
 	grunt.registerTask 'imageoptim',    ['newer:imagemin:src']
 	grunt.registerTask 'production',    ['default', 'cssmin', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean']
 	grunt.registerTask 'default',       ['copy', 'autoprefixer']
