@@ -19,9 +19,11 @@
     <!-- Icons -->
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.ico" />
-
+    <script src="<%= @getUrl('/icons/svg-icons.js') %>"></script>
 </head>
 <body>
+    <div id="elements-placeholder" class="icons-sprite" style="border: 0; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; padding: 0; position: absolute; width: 1px; height: 1px;"></div>
+    <script>document.getElementById("elements-placeholder").innerHTML = SVG_SVG_DEFS;</script>
     <div class="allpage">
         <header class="allpage--header">
             <div class="pageheader">

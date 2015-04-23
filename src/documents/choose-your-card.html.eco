@@ -23,7 +23,7 @@ title: 'Choose Your Card'
 <article class="cover cover-b2" id="express-card">
     <div class="cover--content">
         <h1>Express</h1>
-        <h3>buy, load &amp; spend easily</h3>
+        <h2>buy, load &amp; spend easily</h2>
         <p>Simply load money onto the card in more than 20,000 store locations and you’re ready to shop.</p>
         <p>
             <img src="<%- @getUrl('/img/bossrevolution-logo.svg') %>" height="100" alt="Boss Revolution">
@@ -38,12 +38,13 @@ title: 'Choose Your Card'
             <li>Track your expenses</li>
             <li>£6.95 per card at store</li>
             <li>Free personalised card when upgrading</li>
-            <li>No transaction fee</li>
+            <li>No transaction fee<sup><a href="#note-2">*</a></sup></li>
         </ul>
+        <p id="note-2"><small>* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></small></p>
         <div class="cta">
-            <a href="#compare-cards" class="btn-lnk">Compare features</a>
-            <a href="<%- @getUrl('/get-started/#store-locator') %>" class="btn">Store Locator</a>
-            <a href="<%- @getUrl('/upgrade-now/') %>" class="btn">Upgrade Now</a>
+            <a href="#compare-cards" class="btn btn-lnk">Compare features</a>
+            <a href="<%- @getUrl('/get-started/#store-locator') %>" class="btn btn-cta">Store Locator</a>
+            <a href="<%- @getUrl('/upgrade-now/') %>" class="btn btn-cta">Upgrade Now</a>
         </div>
     </div>
 </article>
@@ -51,7 +52,7 @@ title: 'Choose Your Card'
 <article class="cover cover-b3" id="personal-plus">
     <div class="cover--content">
         <h1>Personal PLUS</h1>
-        <h3>spend with confidence anywhere you see the MasterCard acceptance Mark</h3>
+        <h2>spend with confidence anywhere you see the MasterCard acceptance Mark</h2>
         <ul>
             <li>Reloadable up to £1,900</li>
             <li>Control your expenses</li>
@@ -59,21 +60,17 @@ title: 'Choose Your Card'
             <li>Manage your finances</li>
             <li>Free reload using bank transfer</li>
             <li>Free personalised card when buying or upgrading online</li>
-            <li>No transaction fee <a href="#note-3">*</a></li>
+            <li>No transaction fee<sup><a href="#note-3">*</a></sup></li>
         </ul>
-        <p id="note-3">* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></p>
-        <div class="cta">
-            <a href="#compare-cards" class="btn-lnk">Compare features</a>
-            <a href="<%- @getUrl('/buy-now/') %>" class="btn">Buy Now</a>
-            <a href="<%- @getUrl('/upgrade-now/') %>" class="btn">Upgrade Now</a>
-        </div>
+        <p id="note-3"><small>* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></small></p>
+        <%= @partial('card-cta') %>
     </div>
 </article>
 
 <article class="cover cover-b4" id="personal-max">
     <div class="cover--content">
         <h1>Personal MAX</h1>
-        <h3>travel with confidence anywhere</h3>
+        <h2>travel with confidence anywhere</h2>
         <ul>
             <li>Reloadable up to £12,000 per year</li>
             <li>Shop in 33 million stores around the world</li>
@@ -82,23 +79,19 @@ title: 'Choose Your Card'
             <li>Manage your finances &amp; track your expenses</li>
             <li>Receive payments directly from uK bank accounts</li>
             <li>Free personalised card when buying or upgrading online</li>
-            <li>No transaction fee <a href="#note-4">*</a></li>
+            <li>No transaction fee<sup><a href="#note-4">*</a></sup></li>
             <li>Second card available</li>
             <li>Maximum card balance £5,000</li>
         </ul>
-        <p id="note-4">* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></p>
-        <div class="cta">
-            <a href="#compare-cards" class="btn-lnk">Compare features</a>
-            <a href="<%- @getUrl('/buy-now/') %>" class="btn">Buy Now</a>
-            <a href="<%- @getUrl('/upgrade-now/') %>" class="btn">Upgrade Now</a>
-        </div>
+        <p id="note-4"><small>* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></small></p>
+        <%= @partial('card-cta') %>
     </div>
 </article>
 
 <article class="cover cover-b5" id="family-card">
     <div class="cover--content">
         <h1>Family</h1>
-        <h3>share your money instantly</h3>
+        <h2>share your money instantly</h2>
         <p>A second card is the fastest and cheapest way to share money with family and friends abroad, and they will enjoy all the benefits our card has to offer.</p>
         <ul>
             <li>Free card to card transfer</li>
@@ -108,22 +101,18 @@ title: 'Choose Your Card'
             <li>Manage your finances &amp; track your expenses</li>
             <li>Receive payments directly from UK bank accounts</li>
             <li>Free personalised card when buying or upgrading online</li>
-            <li>No transaction fee <a href="#note-5">*</a></li>
+            <li>No transaction fee<sup><a href="#note-5">*</a></sup></li>
             <li>Maximum card balance £5,000</li>
         </ul>
-        <p id="note-5">* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></p>
-        <div class="cta">
-            <a href="#compare-cards" class="btn-lnk">Compare features</a>
-            <a href="<%- @getUrl('/buy-now/') %>" class="btn">Buy Now</a>
-            <a href="<%- @getUrl('/upgrade-now/') %>" class="btn">Upgrade Now</a>
-        </div>
+        <p id="note-5"><small>* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></small></p>
+        <%= @partial('card-cta') %>
     </div>
 </article>
 
 <article class="cover cover-b6" id="gift-card">
     <div class="cover--content">
         <h1>Gift Card</h1>
-        <h3>the perfect gift for a friend or a loved one</h3>
+        <h2>the perfect gift for a friend or a loved one</h2>
         <p>Celebrate the occasion with a Boss revolution Gift Card. A gift card works just like cash, but it’s easier to carry, more fun to receive and is accepted anywhere Mastercard is accepted — at millions of stores worldwide. Available only at stores.</p>
         <ul>
             <li>Let them decide what to buy</li>
@@ -131,7 +120,7 @@ title: 'Choose Your Card'
             <li>Widely accepted and simple to use</li>
         </ul>
         <div class="cta">
-            <a href="#compare-cards" class="btn-lnk">Compare features</a>
+            <a href="#compare-cards" class="btn btn-lnk">Compare features</a>
         </div>
     </div>
 </article>
@@ -141,11 +130,11 @@ title: 'Choose Your Card'
         <h1>One card for every need</h1>
         <%= @partial('comparison') %>
         <div class="cta cta-comparison">
-            <a href="<%- @getUrl('/buy-now/') %>" class="btn">apply for personal plus</a>
-            <a href="<%- @getUrl('/buy-now/') %>" class="btn">apply for personal max</a>
-            <a href="<%- @getUrl('/buy-now/') %>" class="btn">apply for friends and family</a>
+            <a href="<%- @getUrl('/buy-now/') %>" class="btn btn-cta btn-small">apply for personal plus</a>
+            <a href="<%- @getUrl('/buy-now/') %>" class="btn btn-cta btn-small">apply for personal max</a>
+            <a href="<%- @getUrl('/buy-now/') %>" class="btn btn-cta btn-small">apply for friends and family</a>
         </div>
-        <p>* also applicable for the Gift Card</p>
+        <p><small>* also applicable for the Gift Card</small></p>
     </div>
 </article>
 

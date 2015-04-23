@@ -5,10 +5,10 @@ title: ''
 
 <article class="cover cover-a1">
     <div class="cover--content">
-        <h2>Your Cash. Your WaY.</h2>
-        <p>Boss revolution Prepaid Mastercard®
+        <h2 class="ttu">Your Cash. Your Way.</h2>
+        <p class="tagline">Boss revolution Prepaid Mastercard®
         <br>is the only card you’ll ever need in your wallet</p>
-        <h1>Boss Revolution Prepaid MasterCard</h1>
+        <h1 class="title-bg">Boss Revolution Prepaid MasterCard</h1>
     </div>
 </article>
 <article class="cover cover-a2">
@@ -16,19 +16,35 @@ title: ''
         <h1>A CARD for all your needs</h1>
         <ul>
             <li>
-                <h3>Express</h3>
+                <h3>
+                    <svg class="i i--express">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--express"></use>
+                    </svg>
+                Express</h3>
                 <p>buy it in more than 20,000 locations</p>
             </li>
             <li>
-                <h3>Personal Plus</h3>
+                <h3>
+                    <svg class="i i--persplus">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persplus"></use>
+                    </svg>
+                Personal Plus</h3>
                 <p>make everyday purchase anywhere</p>
             </li>
             <li>
-                <h3>Personal Max <a href="#note-1">*</a></h3>
+                <h3>
+                    <svg class="i i--persmax">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persmax"></use>
+                    </svg>
+                Personal Max<sup><a href="#note-1">*</a></sup></h3>
                 <p>reloadable up to 12,000 per year</p>
             </li>
             <li>
-                <h3>Family <a href="#note-1">*</a></h3>
+                <h3>
+                    <svg class="i i--family">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--family"></use>
+                    </svg>
+                Family<sup><a href="#note-1">*</a></sup></h3>
                 <p>two cards for sharing money Instantly</p>
             </li>
         </ul>
@@ -39,7 +55,9 @@ title: ''
 </article>
 <article class="cover cover-a3">
     <div class="cover--content">
-        <h2>Make everyday purchases,
+        <h2>
+        <img src="<%- @getUrl('/img/mastercard-logo.svg')%>" width="100" alt="MasterCard Acceptance Mark">
+        <br>Make everyday purchases,
         <br>pay bills and shop online,
         <br>anywhere you see
         <br>the MasterCard Acceptance Mark</h2>
@@ -64,21 +82,23 @@ title: ''
             <li>Add funds in over 20,000 locations across UK</li>
         </ul>
         <p>
-            <a href="#" class="btn">Buy Now</a>
-            <a href="#" class="btn">Upgrade Now</a>
-            <a href="#" class="btn">Register Now</a>
+            <a href="#" class="btn btn-cta">Buy Now</a>
+            <a href="#" class="btn btn-cta">Upgrade Now</a>
+            <a href="#" class="btn btn-cta">Register Now</a>
         </p>
     </div>
 </article>
 <article class="cover cover-a6">
     <div class="cover--content">
         <h1>Free rewards</h1>
-        <p>Free personalised card when buying or upgrading here <a href="#note-2">*</a></p>
+        <p>Free personalised card when buying or upgrading here<sup><a href="#note-2">*</a></sup></p>
         <p>International Calls. Receive up to 100 minutes FREE on every card load</p>
         <p>£0FEE during the first month</p>
         <p>Use your promo code to get 3 months free. Look for Boss Revolution Promo Codes and enjoy special features when buying or upgrading your card</p>
 
-        <p id="note-2"><small>* If you buy and reload online with more than £30</small></p>
+        <p id="note-2">
+            <small>* If you buy and reload online with more than £30</small>
+        </p>
     </div>
 </article>
 <article class="cover cover-a7">
