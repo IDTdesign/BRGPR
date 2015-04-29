@@ -7,11 +7,42 @@ title: 'Choose Your Card'
 <article class="cover cover-b1">
     <div class="cover--content">
         <h1>Choose the card that best fits your needs</h1>
+
+
+
         <ul>
-            <li class=""><a href="#express-card"  class=""><span class="">Express Card</span></a></li>
-            <li class=""><a href="#personal-plus" class=""><span class="">Personal Plus</span></a></li>
-            <li class=""><a href="#personal-max"  class=""><span class="">Personal Max</span></a></li>
-            <li class=""><a href="#family-card"   class=""><span class="">Family Card</span></a></li>
+            <li class="">
+                <a href="#express-card"  class="">
+                    <svg class="i i--express">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--express"></use>
+                    </svg>
+                    <span class="">Express Card</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="#personal-plus" class="">
+                    <svg class="i i--persplus">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persplus"></use>
+                    </svg>
+                    <span class="">Personal Plus</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="#personal-max"  class="">
+                    <svg class="i i--persmax">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persmax"></use>
+                    </svg>
+                    <span class="">Personal Max</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="#family-card"   class="">
+                    <svg class="i i--family">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--family"></use>
+                    </svg>
+                    <span class="">Family Card</span>
+                </a>
+            </li>
         </ul>
         <ul>
             <li class=""><a href="#gift-card"     class=""><span class="">Gift Card</span></a></li>
@@ -22,7 +53,12 @@ title: 'Choose Your Card'
 
 <article class="cover cover-b2" id="express-card">
     <div class="cover--content">
-        <h1>Express</h1>
+        <h1>
+            <svg class="i i--express">
+                <use xlink:href="#i--express"></use>
+            </svg>
+            Express
+        </h1>
         <h2>buy, load &amp; spend easily</h2>
         <p>Simply load money onto the card in more than 20,000 store locations and you’re ready to shop.</p>
         <p>
@@ -51,7 +87,12 @@ title: 'Choose Your Card'
 
 <article class="cover cover-b3" id="personal-plus">
     <div class="cover--content">
-        <h1>Personal PLUS</h1>
+        <h1>
+            <svg class="i i--persplus">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persplus"></use>
+            </svg>
+            Personal PLUS
+        </h1>
         <h2>spend with confidence anywhere you see the MasterCard acceptance Mark</h2>
         <ul>
             <li>Reloadable up to £1,900</li>
@@ -69,7 +110,12 @@ title: 'Choose Your Card'
 
 <article class="cover cover-b4" id="personal-max">
     <div class="cover--content">
-        <h1>Personal MAX</h1>
+        <h1>
+            <svg class="i i--persmax">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persmax"></use>
+            </svg>
+            Personal MAX
+        </h1>
         <h2>travel with confidence anywhere</h2>
         <ul>
             <li>Reloadable up to £12,000 per year</li>
@@ -90,7 +136,12 @@ title: 'Choose Your Card'
 
 <article class="cover cover-b5" id="family-card">
     <div class="cover--content">
-        <h1>Family</h1>
+        <h1>
+            <svg class="i i--family">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--family"></use>
+            </svg>
+            Family
+        </h1>
         <h2>share your money instantly</h2>
         <p>A second card is the fastest and cheapest way to share money with family and friends abroad, and they will enjoy all the benefits our card has to offer.</p>
         <ul>
@@ -111,7 +162,12 @@ title: 'Choose Your Card'
 
 <article class="cover cover-b6" id="gift-card">
     <div class="cover--content">
-        <h1>Gift Card</h1>
+        <h1>
+            <svg class="i i--gift">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--gift"></use>
+            </svg>
+            Gift Card
+        </h1>
         <h2>the perfect gift for a friend or a loved one</h2>
         <p>Celebrate the occasion with a Boss revolution Gift Card. A gift card works just like cash, but it’s easier to carry, more fun to receive and is accepted anywhere Mastercard is accepted — at millions of stores worldwide. Available only at stores.</p>
         <ul>

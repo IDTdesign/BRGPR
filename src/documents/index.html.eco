@@ -74,6 +74,23 @@ title: ''
 <article class="cover cover-a5">
     <div class="cover--content">
         <h1>Join Boss Revolution Prepaid MasterCard</h1>
+        <p>
+            <svg class="i i--express">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--express"></use>
+            </svg>
+
+            <svg class="i i--persplus">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persplus"></use>
+            </svg>
+
+            <svg class="i i--persmax">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persmax"></use>
+            </svg>
+
+            <svg class="i i--family">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--family"></use>
+            </svg>
+        </p>
         <ul>
             <li>Reloadable</li>
             <li>No credit checks - No hidden fees - No bank account</li>
