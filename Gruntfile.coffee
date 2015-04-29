@@ -24,16 +24,37 @@ module.exports = (grunt) ->
 					#'out/vendor/jquery.localScroll/jquery.localScroll.min.js':'bower_components/jquery.localScroll/jquery.localScroll.min.js'
 				]
 
+		# compile less and generate map files
+		less:
+			out:
+				options:
+					strictMath: true
+					sourceMap: true
+					outputSourceFiles: true
+					sourceMapURL: 'template.css.map'
+					sourceMapFilename: 'out/styles/template.css.map'
+				files:
+					'out/css/template.css': 'src/files/css/template.css.less'
+
 		# add vendor prefixes
 		autoprefixer:
 			options:
 				browsers: [
-					'last 4 versions'
+					'Android 2.3'
+					'Android >= 4'
+					'Chrome >= 20'
+					'Firefox >= 24'
+					'Explorer >= 9'
+					'iOS >= 6'
+					'Opera >= 12'
+					'Safari >= 6'
 				]
-			default:
+			dev:
 				options:
-					map: false
+					map: true
 				src: 'out/css/template.css'
+			static:
+				src: 'out/css/output.min.css'
 
 		#minify css
 		cssmin:
@@ -229,6 +250,7 @@ module.exports = (grunt) ->
 				]
 
 	# Build the available Grunt tasks.
+	grunt.loadNpmTasks 'grunt-contrib-less'
 	grunt.loadNpmTasks 'grunt-autoprefixer'
 	grunt.loadNpmTasks 'grunt-contrib-cssmin'
 	grunt.loadNpmTasks 'grunt-contrib-jshint'
@@ -250,5 +272,5 @@ module.exports = (grunt) ->
 	grunt.registerTask 'lint',          ['recess', 'htmllint']
 	grunt.registerTask 'svgicons',      ['imagemin:icons', 'svgstore', 'svg2string']
 	grunt.registerTask 'imageoptim',    ['newer:imagemin:src']
-	grunt.registerTask 'production',    ['default', 'cssmin', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean']
-	grunt.registerTask 'default',       ['copy', 'autoprefixer']
+	grunt.registerTask 'production',    ['copy', 'less:out', 'cssmin', 'autoprefixer:static', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean']
+	grunt.registerTask 'default',       ['copy', 'less:out', 'autoprefixer:dev']

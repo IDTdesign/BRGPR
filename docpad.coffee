@@ -135,7 +135,7 @@ docpadConfig = {
 			# considered suffixes that must match.
 			whitelist: [
 				'.html'
-				'.css'
+				#'.css'
 				'.js'
 				'.xml'
 				'.svg'
