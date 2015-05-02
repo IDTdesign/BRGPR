@@ -24,6 +24,14 @@
 
 `docpad deploy-ghpages --env static` — publish to http://IDTdesign.github.io/BRGPR
 
+### Custom grunt tasks
+
+`grunt lint --force` — check *.less files and *.html files for errors. Run when project fails to compile.
+
+`grunt svgicons` — compile svg sprite. Run when icons edited or added new.
+
+`grunt imageoptim` — compress images in img folder. Run when new assets added.
+
 ### About Docpad Environments
 
 There are 3 environments in the project:
