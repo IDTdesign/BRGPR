@@ -1,5 +1,5 @@
-@pad_hor: 20px;
-@pad_hor_big: 40px;
+// @pad_hor: 20px;
+// @pad_hor_big: 40px;
 
 .cover {
     position: relative;
@@ -25,7 +25,7 @@
 }
 
 
-@media (min-width: 640px) {
+@media @xsm {
     .cover--content {
         padding-left: @pad_hor_big;
         padding-right: @pad_hor_big;
@@ -33,7 +33,7 @@
 }
 
 // switch from portrait to landscape
-@media (min-width: 960px) {
+@media @md {
 
     .cover {
         //min-height: 10 / 16 * 100vw;
@@ -73,7 +73,7 @@
         padding: @pad_hor;
         background-color: rgba(255, 0, 0, 0.6);
 
-        @media (min-width: 640px) {
+        @media @xsm {
             margin: 1em -@pad_hor_big 0;
             padding: @pad_hor @pad_hor_big;
         }
@@ -87,7 +87,7 @@
     background-image: url(../img/notebook_portrait.jpg);
     text-align: center;
 
-    @media (min-width: 960px) {
+    @media @md {
 
         background-position: 50% 50%;
 
@@ -104,7 +104,7 @@
     background-image: url(../img/worldmap_portrait.jpg);
     text-align: center;
 
-    @media (min-width: 960px) {
+    @media @md {
 
         .cover--content {
             padding-top: 40vw;
@@ -118,7 +118,7 @@
     background-position: 30% 50%;
     background-image: url(../img/payanywhere_portrait.jpg);
 
-    @media (min-width: 960px) {
+    @media @md {
 
         .cover--content {
             margin-left: 40vw;
@@ -145,7 +145,7 @@
     background-position: 0 100%;
     background-image: url(../img/anytaste_portrait.jpg);
 
-    @media (min-width: 960px) {
+    @media @md {
 
         .cover--content {
             margin-left: 40vw;
@@ -159,7 +159,7 @@
     background-position: 30% 50%;
     background-image: url(../img/express_portrait.jpg);
 
-    @media (min-width: 960px) {
+    @media @md {
 
         .cover--content {
             margin-left: 40vw;
@@ -173,7 +173,7 @@
     background-position: 70% 50%;
     background-image: url(../img/notebook2_portrait.jpg);
 
-    @media (min-width: 960px) {
+    @media @md {
 
         .cover--content {
             margin-right: 40vw;
@@ -198,7 +198,7 @@
     background-position: 20% 50%;
     background-image: url(../img/family_portrait.jpg);
 
-    @media (min-width: 960px) {
+    @media @md {
 
         .cover--content {
             margin-left: 40vw;
@@ -212,7 +212,7 @@
     background-position: 100% 70%;
     background-image: url(../img/gifts_portrait.jpg);
 
-    @media (min-width: 960px) {
+    @media @md {
 
         .cover--content {
             margin-right: 40vw;
@@ -243,7 +243,7 @@
     background-position: 50% 50%;
     background-image: url(../img/blackman_portrait.jpg);
 
-    @media (min-width: 960px) {
+    @media @md {
 
         .cover--content {
             margin-left: 40vw;
@@ -264,7 +264,7 @@
     background-position: 80% 50%;
     background-image: url(../img/whiteman_portrait.jpg);
 
-    @media (min-width: 960px) {
+    @media @md {
 
         .cover--content {
             margin-right: 40vw;
@@ -278,7 +278,7 @@
     background-position: 20% 50%;
     background-image: url(../img/asiangirl_portrait.jpg);
 
-    @media (min-width: 960px) {
+    @media @md {
 
         .cover--content {
             margin-left: 40vw;
@@ -297,7 +297,7 @@
     only screen and (min-device-pixel-ratio: 2),
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx),
-    only screen and (min-width: 640px) {
+    only screen and @xsm {
 
         .cover-a1 {
             background-image: url(../img/wallet_portrait@2x.jpg);
@@ -354,9 +354,9 @@
 
 // 640px+ retina
 @media
-    only screen and (min-device-pixel-ratio: 2) and (min-width: 640px),
-    only screen and (min-resolution: 192dpi)    and (min-width: 640px),
-    only screen and (min-resolution: 2dppx)     and (min-width: 640px) {
+    only screen and (min-device-pixel-ratio: 2) and @xsm,
+    only screen and (min-resolution: 192dpi)    and @xsm,
+    only screen and (min-resolution: 2dppx)     and @xsm {
 
         .cover-a1 {
             background-image: url(../img/wallet_portrait@3x.jpg);
@@ -414,7 +414,7 @@
 
 // 960px+ non-retina
 @media
-    only screen and (min-width: 960px) {
+    only screen and @md {
 
         .cover-a1 {
             background-image: url(../img/wallet_landscape.jpg);
@@ -475,7 +475,7 @@
 
 // 1440px+ non-retina
 @media
-    only screen and (min-width: 1440px) {
+    only screen and @lg {
 
         .cover-a1 {
             background-image: url(../img/wallet_landscape@1.5x.jpg);
@@ -530,10 +530,10 @@
 
 // 960px+ retina, 1920px non-retina
 @media
-    only screen and (min-device-pixel-ratio: 2) and (min-width: 960px),
-    only screen and (min-resolution: 192dpi)    and (min-width: 960px),
-    only screen and (min-resolution: 2dppx)     and (min-width: 960px),
-    only screen                                 and (min-width: 1920px) {
+    only screen and (min-device-pixel-ratio: 2) and @md,
+    only screen and (min-resolution: 192dpi)    and @md,
+    only screen and (min-resolution: 2dppx)     and @md,
+    only screen                                 and @xlg {
 
         .cover-a1 {
             background-image: url(../img/wallet_landscape@2x.jpg);

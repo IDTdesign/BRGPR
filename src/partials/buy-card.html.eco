@@ -1,0 +1,131 @@
+<!-- html copied from https://extraapp2008:4444/svpeuro/signup/start/BRGPR -->
+<form action="<%- @getUrl('/buy-now/step2/') %>" method="post" novalidate="novalidate">
+    <h1 class="txt_1_h1">BUY YOUR PRIME CARD</h1>
+    <div id="validationSummary" class="validationSummary">
+        <div class="validation-summary-errors">
+            <ul>
+                <li>Invalid Validation Code answer</li>
+            </ul>
+        </div>
+    </div>
+    <div class="steps-pane">
+        <span class="steps_h2 current">STEP 1</span>
+        <span class="separator">»</span>
+        <span class="steps_h2 unavailable">STEP 2</span>
+        <span class="separator">»</span>
+    </div>
+    <div id="registerInter" class="form-styled form-fullwidth">
+        <div class="form-row form-pane clr">
+            <label class="lbl">Card Product</label>
+            <div class="field">
+                <select class="solSlct valid" data-val="true" data-val-required=" " id="ProgramType" name="ProgramType">
+                    <option selected="selected" value="PLUS">PLUS</option>
+                    <option value="MAX">MAX</option>
+                    <option value="FF">FRIENDS &amp; FAMILY</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row form-pane clr">
+            <label class="lbl">
+                <label for="Amount">Please tell us the amount of money you would like to load on to your new account</label>
+            </label>
+            <div class="field">
+                <select class="solSlct" id="Amount" name="Amount">
+                    <option value="10">£10</option>
+                    <option value="15">£15</option>
+                    <option value="20">£20</option>
+                    <option value="25">£25</option>
+                    <option value="30">£30</option>
+                    <option value="35">£35</option>
+                    <option value="40">£40</option>
+                    <option value="45">£45</option>
+                    <option value="50">£50</option>
+                    <option value="60">£60</option>
+                    <option value="70">£70</option>
+                    <option value="80">£80</option>
+                    <option value="90">£90</option>
+                    <option value="100">£100</option>
+                    <option value="110">£110</option>
+                    <option value="120">£120</option>
+                    <option value="130">£130</option>
+                    <option value="140">£140</option>
+                    <option value="150">£150</option>
+                    <option value="200">£200</option>
+                    <option value="250">£250</option>
+                    <option value="300">£300</option>
+                </select>
+           </div>
+        </div>
+        <div class="form-row form-pane clr">
+            <label class="lbl">
+                <label for="Email">Email</label>
+            </label>
+            <div class="field">
+                <input class="text-box single-line input-validation-error" data-val="true" data-val-required=" " id="Email" name="Email" type="email" value="">
+                <span class="field-validation-error" data-valmsg-for="Email" data-valmsg-replace="true">
+                    <span for="Email" generated="true" class="">Please enter a valid email address.</span>
+                </span>
+            </div>
+        </div>
+        <div class="form-row form-pane clr">
+            <label class="lbl">
+                <label for="ConfirmEmail">Re-type-email address</label>
+            </label>
+            <div class="field">
+                <input class="text-box single-line" data-val="true" data-val-equalto="Emails do not match" data-val-equalto-other="*.Email" data-val-required=" " id="ConfirmEmail" name="ConfirmEmail" type="email" value="">
+                <span class="field-validation-valid" data-valmsg-for="ConfirmEmail" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-row form-pane clr">
+            <label class="lbl">
+                <label for="Title">Title</label>
+            </label>
+            <div class="field">
+                <select class="solSlct" id="Title" name="Title">
+                    <option value="MISS">MISS</option>
+                    <option value="MR">MR</option>
+                    <option value="MRS">MRS</option>
+                    <option value="MS">MS</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row form-pane clr">
+            <label class="lbl">
+                <label for="FirstName">First Name</label>
+            </label>
+            <div class="field">
+                <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="[a-zA-Z -]+" data-val-required=" " id="FirstName" name="FirstName" type="text" value="">
+                <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-row form-pane clr">
+            <label class="lbl">
+                <label for="LastName">Last Name</label>
+            </label>
+            <div class="field">
+                <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="[a-zA-Z -]+" data-val-required=" " id="LastName" name="LastName" type="text" value="">
+                <span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-row form-pane clr">
+            <label class="lbl">
+                <label for="Captcha">Add these numbers together and enter the answer</label>
+            </label>
+            <div class="field">
+                <div class="captch-wrapper">
+                    <img alt="Captcha" src="<%- @getUrl('/img/captcha.jpg') %>" style="">
+                    <br>
+                </div>
+                <br>
+                <input class="text-box single-line" data-val="true" data-val-required=" " id="Captcha" name="Captcha" type="text" value="">
+                <span class="field-validation-valid" data-valmsg-for="Captcha" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-row form-actions">
+            <div class="wrapper-forward">
+                <input type="submit" value="Continue »" class="btn_sbmit_imge">
+            </div>
+        </div>
+    </div>
+    <input id="ProgramType" name="ProgramType" type="hidden" value="PLUS">
+</form>
