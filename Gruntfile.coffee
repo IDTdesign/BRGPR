@@ -139,7 +139,7 @@ module.exports = (grunt) ->
 					strictPropertyOrder: false   # Complains if not strict property order
 					zeroUnits: true             # Doesn't complain if you add units to values of 0
 					includePath: 'mixed'          # Additional paths to look for `@import`'ed LESS files.  Accepts a string or an array of strings.
-				src: ['src/documents/css/*.less']
+				src: ['src/files/css/*.less']
 
 		# HTML5 validation
 		htmllint:
@@ -147,7 +147,7 @@ module.exports = (grunt) ->
 				expand: true
 				cwd: 'out/'
 				src: [
-					'*.html'
+					'**/*.html'
 					'!google*.html'
 					'!yandex*.html'
 				]
