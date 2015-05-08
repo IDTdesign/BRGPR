@@ -17,6 +17,11 @@ html {
     position: relative;
 }
 
+/* when js enabled we have fixed pageheader → no need to have relative container */
+.js .allpage--header {
+    position: static;
+}
+
 .allpage--body {
     flex-grow: 1;
     display: flex;
