@@ -31,7 +31,8 @@
     }
 }
 
-.form-row {
+.form-row,
+.form_row {
     margin-bottom: 20px;
 }
 
@@ -203,10 +204,6 @@
     }
 }
 
-.flexbox .postcode {
-
-}
-
 .content-block {
 
     h2 {
@@ -236,8 +233,55 @@
     }
 }
 
+.form_row {
+    & > label {
+        display: block;
+    }
+
+    & > .field-validation-valid,
+    & > .field-validation-error {
+        display: block;
+    }
+}
+
+@media @sm {
+    .form_row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & > label {
+            width: 30%;
+            padding-right: 1em;
+        }
+
+        & > .field-validation-valid,
+        & > .field-validation-error {
+            display: block;
+            width: 100%;
+            padding-left: 30%;
+        }
+
+        [type="checkbox"] {
+            order: 1;
+        }
+    }
+}
+
+// override inline styles
+.jq-dte-day,
+.jq-dte-month {
+    width: 2.4em !important;
+}
+.jq-dte-year {
+    width: 3.5em !important;
+}
 .jq-dte-inner {
     .separator {
         margin: 0 .3em;
     }
+}
+
+#SecurityDigits {
+    width: 3em;
 }

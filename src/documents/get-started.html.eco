@@ -11,16 +11,18 @@ title: 'Get Started'
     </div>
 </article>
 
-<article class="cover cover-c2" id="store-locator">
-    <div class="cover--content">
+<article class="container" id="store-locator">
+    <div class="container--content">
         <h1>Store locator</h1>
         <div class="island">
-            <form action="<%- @getUrl('/get-started/#store-locator') %>">
-                <h3>Find your nearest store</h3>
-                <p>To find your nearest Payzone or Boss Revolution Store please enter a town/city or postcode into the locator search box.</p>
-                <input type="text" name="" id="">
-                <button type="submit" class="btn">Find nearest</button>
-            </form>
+            <div class="island--content">
+                <form action="<%- @getUrl('/get-started/#store-locator') %>">
+                    <h3>Find your nearest store</h3>
+                    <p>To find your nearest Payzone or Boss Revolution Store please enter a town/city or postcode into the locator search box.</p>
+                    <input type="text" name="" id="">
+                    <button type="submit" class="btn">Find nearest</button>
+                </form>
+            </div>
         </div>
     </div>
 </article>
@@ -60,4 +62,5 @@ title: 'Get Started'
         </p>
     </div>
 </article>
-<% #comment %>
+
+<%- @partial('vnav/vnav-get-started') %>

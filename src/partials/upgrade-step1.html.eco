@@ -1,0 +1,76 @@
+<form action="/svpeuro/Upgrade/Home/MoveToNextPage" autocomplete="off" method="post" novalidate="novalidate">    <h1 class="txt_1_h1">Log IN</h1>
+    <div id="validationSummary" class="validationSummary">
+
+    </div>
+    <div class="steps-pane">
+        <span class="steps_h2 current">STEP 1</span>
+        <span class="separator">»</span>
+        <span class="steps_h2 unavailable">STEP 2</span>
+    </div>
+
+
+    <div id="registerInter" class="form-styled form-horizontal form-fullwidth">
+
+        <div class="form-row form-pane clr">
+            <div class="lbl"><label for="SVPCardNumber">Card Number</label>
+                <span class="lbl-hint">The 16 digit numbers on the front of your card</span>
+            </div>
+            <div class="field">
+
+ <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="[0-9 ]{16}" data-val-required=" " id="SVPCardNumber" name="SVPCardNumber" type="text" value="">
+
+
+                <span class="field-validation-valid" data-valmsg-for="SVPCardNumber" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        <div class="form-row form-pane clr">
+            <div class="lbl"><label for="SVPCvv">Card Verification Value</label>
+                <span class="lbl-hint">The 3-digit number on the back of the card</span>
+            </div>
+            <div class="field">
+                <input data-val="true" data-val-regex=" " data-val-regex-pattern="[0-9 ]{3}" data-val-required=" " id="SVPCvv" name="SVPCvv" type="password">
+                <span class="field-validation-valid" data-valmsg-for="SVPCvv" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-row form-pane clr">
+           <div class="lbl"><label for="Captcha">Add these numbers together and enter the answer</label></div>
+            <div class="field">
+                <div class="captch-wrapper"><img alt="Captcha" src="/svpeuro/Upgrade/Home/CaptchaImage" style=""><br></div>
+                <br>
+
+ <input class="text-box single-line" data-val="true" data-val-required=" " id="Captcha" name="Captcha" type="text" value="">
+
+
+                <span class="field-validation-valid" data-valmsg-for="Captcha" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-row form-actions">
+            <div class="wrapper-forward">
+                <input type="submit" value="Continue »" class="btn_sbmit_imge">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //addErrorsToValidationSummary("error"); //test
+        });
+        function addErrorsToValidationSummary(errMsg) {
+
+            var validationSummary = $('#validationSummary div.validation-summary-errors ul');
+
+            if (validationSummary.length == 0) {
+                $('#validationSummary').after('<ul></ul>');
+                validationSummary = $('#validationSummary div.validation-summary-errors ul');
+            }
+            validationSummary.append('<li>' + errMsg + '</li>');
+
+        }
+    </script>
+
+
+
+<input id="FingerprintHash" name="FingerprintHash" type="hidden" value="65eb86a0b359ef7006e00ba312b172780935fb12ab902daec6339ecda4add2de"><input id="FingerprintRaw" name="FingerprintRaw" type="hidden" value="{browser:{&quot;webkit&quot;:true,&quot;version&quot;:42.0.2311.135},viewport:{&quot;width&quot;:1280,&quot;height&quot;:1287},support:{&quot;ajax&quot;:true,&quot;boxModel&quot;:true,&quot;changeBubbles&quot;:true,&quot;checkClone&quot;:true,&quot;checkOn&quot;:true,&quot;cors&quot;:true,&quot;cssFloat&quot;:true,&quot;hrefNormalized&quot;:true,&quot;htmlSerialize&quot;:true,&quot;leadingWhitespace&quot;:true,&quot;noCloneChecked&quot;:true,&quot;noCloneEvent&quot;:true,&quot;opacity&quot;:true,&quot;optDisabled&quot;:true,&quot;style&quot;:true,&quot;submitBubbles&quot;:true,&quot;tbody&quot;:true},computer:{&quot;screenWidth&quot;:2560,&quot;screenHeight&quot;:1440,&quot;OS&quot;:&quot;Apple MacOS&quot;,&quot;platform&quot;:MacIntel&quot;}}"></form>

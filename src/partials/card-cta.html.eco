@@ -1,5 +1,5 @@
         <div class="cta">
-            <a href="#compare-cards" class="btn btn-lnk">Compare features</a>
+            <a href="#compare-cards" class="btn btn-lnk js-local">Compare features</a>
             <a href="<%- @getUrl('/buy-now/') %>" class="btn btn-cta">Buy Now</a>
             <a href="<%- @getUrl('/upgrade-now/') %>" class="btn btn-cta">Upgrade Now</a>
         </div>

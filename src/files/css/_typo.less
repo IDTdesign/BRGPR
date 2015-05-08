@@ -3,6 +3,7 @@
 body {
     line-height: 1.5;
     font-family: @font1;
+    color: @ink;
 }
 
 /* headers and paragraphs */
@@ -131,9 +132,9 @@ li p:last-child {
 }
 
 /* minimum paragraph width when floating http://css-tricks.com/minimum-paragraph-widths/‎ */
-article p:before,
-article ol:before,
-article ul:before {
+p:not([class]):before,
+ol:not([class]):before,
+ul:not([class]):before {
     content: '';
     display: block;
     width: 10em;
@@ -346,4 +347,24 @@ table:not([class]) thead th,
 table:not([class]) thead td {
     vertical-align: bottom;
     border-bottom-width: 2px;
+}
+
+
+//links
+a {
+    color: #0076ff;
+
+    &:link {
+        color: #0076ff;
+    }
+
+    &:visited {
+        color: #A100FF;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #FF0000;
+    }
 }

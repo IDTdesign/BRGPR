@@ -4,7 +4,7 @@ title: 'Choose Your Card'
 ---
 
 
-<article class="cover cover-b1">
+<article class="cover cover-b1" id="b1">
     <div class="cover--content">
         <h1>Choose the card that best fits your needs</h1>
 
@@ -12,7 +12,7 @@ title: 'Choose Your Card'
 
         <ul>
             <li class="">
-                <a href="#express-card"  class="">
+                <a href="#express-card"  class="js-local">
                     <svg class="i i--express">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--express"></use>
                     </svg>
@@ -20,7 +20,7 @@ title: 'Choose Your Card'
                 </a>
             </li>
             <li class="">
-                <a href="#personal-plus" class="">
+                <a href="#personal-plus" class="js-local">
                     <svg class="i i--persplus">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persplus"></use>
                     </svg>
@@ -28,7 +28,7 @@ title: 'Choose Your Card'
                 </a>
             </li>
             <li class="">
-                <a href="#personal-max"  class="">
+                <a href="#personal-max"  class="js-local">
                     <svg class="i i--persmax">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persmax"></use>
                     </svg>
@@ -36,7 +36,7 @@ title: 'Choose Your Card'
                 </a>
             </li>
             <li class="">
-                <a href="#family-card"   class="">
+                <a href="#family-card"   class="js-local">
                     <svg class="i i--family">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--family"></use>
                     </svg>
@@ -45,8 +45,8 @@ title: 'Choose Your Card'
             </li>
         </ul>
         <ul>
-            <li class=""><a href="#gift-card"     class=""><span class="">Gift Card</span></a></li>
-            <li class=""><a href="#compare-cards" class=""><span class="">Compare Cards</span></a></li>
+            <li class=""><a href="#gift-card"     class="js-local"><span class="">Gift Card</span></a></li>
+            <li class=""><a href="#compare-cards" class="js-local"><span class="">Compare Cards</span></a></li>
         </ul>
     </div>
 </article>
@@ -78,7 +78,7 @@ title: 'Choose Your Card'
         </ul>
         <p id="note-2"><small>* See <a href="<%= @getUrl('/questions/#FEEs') %>">fee table</a></small></p>
         <div class="cta">
-            <a href="#compare-cards" class="btn btn-lnk">Compare features</a>
+            <a href="#compare-cards" class="btn btn-lnk js-local">Compare features</a>
             <a href="<%- @getUrl('/get-started/#store-locator') %>" class="btn btn-cta">Store Locator</a>
             <a href="<%- @getUrl('/upgrade-now/') %>" class="btn btn-cta">Upgrade Now</a>
         </div>
@@ -176,7 +176,7 @@ title: 'Choose Your Card'
             <li>Widely accepted and simple to use</li>
         </ul>
         <div class="cta">
-            <a href="#compare-cards" class="btn btn-lnk">Compare features</a>
+            <a href="#compare-cards" class="btn btn-lnk js-local">Compare features</a>
         </div>
     </div>
 </article>
@@ -194,4 +194,4 @@ title: 'Choose Your Card'
     </div>
 </article>
 
-<% #comment %>
+<%- @partial('vnav/vnav-choose-a-card') %>

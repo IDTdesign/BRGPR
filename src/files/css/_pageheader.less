@@ -8,14 +8,9 @@
     z-index: 1;
     width: 100%;
     background-color: @header_bg;
+    background-image: radial-gradient(60px at 45px 17px, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.25) 25px, rgba(255, 255, 255, 0) 90px);
     border-top: @topline_h solid @topline_bg;
     min-height: @menuline_h;
-
-    .sitelogo,
-    .mainnav,
-    .mastercard {
-
-    }
 
     .sitelogo {
         float: left;
@@ -40,7 +35,7 @@
         right: 0;
     }
 
-    @media (min-width: 480px) {
+    @media @xxsm {
 
         .sitelogo {
             margin-top: (-@topline_h + 10px);
@@ -62,4 +57,36 @@
             margin: 19px 9px;
         }
     }
+}
+
+
+.js .pageheader {
+    position: fixed;
+    //position: sticky;
+    transform: translateY(-100%);
+    transition: all 0.6s 1s;
+}
+
+@media @lg {
+    .js .pageheader,
+    .js .js-scrollfix .pageheader,
+    .js .js-scrollup .pageheader {
+        transform: none;
+        transition: none;
+    }
+}
+
+@media @xlg {
+    .js .pageheader {
+        width: 1920px;
+    }
+}
+
+
+.js-scrollfix .pageheader {
+    transform: translateY(0);
+}
+
+.js-scrollup .pageheader {
+    transform: translateY(0);
 }

@@ -2,7 +2,6 @@
 // @pad_hor_big: 40px;
 
 .container {
-    min-height: 100vh;
     background-size: cover;
     background-position: 50% 50%;
     color: #FFF;
@@ -30,4 +29,8 @@
         padding-left: @pad_hor_big;
         padding-right: @pad_hor_big;
     }
+}
+
+.allpage--body .container:only-child {
+    flex-grow: 1;
 }

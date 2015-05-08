@@ -3,7 +3,7 @@ layout: 'default'
 title: ''
 ---
 
-<article class="cover cover-a1">
+<article class="cover cover-a1" id="a1">
     <div class="cover--content">
         <h2 class="ttu">Your Cash. Your Way.</h2>
         <p class="tagline">Boss revolution Prepaid Mastercard®
@@ -11,41 +11,45 @@ title: ''
         <h1 class="title-bg">Boss Revolution Prepaid MasterCard</h1>
     </div>
 </article>
-<article class="cover cover-a2">
+<article class="cover cover-a2" id="a2">
     <div class="cover--content">
         <h1>A CARD for all your needs</h1>
-        <ul>
-            <li>
-                <h3>
-                    <svg class="i i--express">
+        <ul class="product-list">
+            <li class="product--item">
+                <a href="<%= @getUrl('/choose-your-card/#express-card') %>" class="product--link">
+                   <svg class="i i--express">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--express"></use>
                     </svg>
-                Express</h3>
-                <p>buy it in more than 20,000 locations</p>
+                    <h3 class="product--name"><span>Express</span></h3>
+                    <p class="product--descr">buy it in more than <br> 20,000 locations</p>
+                </a>
             </li>
-            <li>
-                <h3>
+            <li class="product--item">
+                <a href="<%= @getUrl('/choose-your-card/#personal-plus') %>" class="product--link">
                     <svg class="i i--persplus">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persplus"></use>
                     </svg>
-                Personal Plus</h3>
-                <p>make everyday purchase anywhere</p>
+                    <h3 class="product--name"><span>Personal Plus</span></h3>
+                    <p class="product--descr">make everyday <br> purchase anywhere</p>
+                </a>
             </li>
-            <li>
-                <h3>
+            <li class="product--item">
+                <a href="<%= @getUrl('/choose-your-card/#personal-max') %>" class="product--link">
                     <svg class="i i--persmax">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persmax"></use>
                     </svg>
-                Personal Max<sup><a href="#note-1">*</a></sup></h3>
-                <p>reloadable up to 12,000 per year</p>
+                    <h3 class="product--name"><span>Personal Max<sup>*</sup></span></h3>
+                    <p class="product--descr">reloadable up to <br> 12,000 per year</p>
+                </a>
             </li>
-            <li>
-                <h3>
+            <li class="product--item">
+                <a href="<%= @getUrl('/choose-your-card/#family-card') %>" class="product--link">
                     <svg class="i i--family">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--family"></use>
                     </svg>
-                Family<sup><a href="#note-1">*</a></sup></h3>
-                <p>two cards for sharing money Instantly</p>
+                    <h3 class="product--name"><span>Family<sup>*</sup></span></h3>
+                    <p class="product--descr">two cards for sharing <br> money Instantly</p>
+                </a>
             </li>
         </ul>
         <p id="note-1">
@@ -53,7 +57,7 @@ title: ''
         </p>
     </div>
 </article>
-<article class="cover cover-a3">
+<article class="cover cover-a3" id="a3">
     <div class="cover--content">
         <h2>
         <img src="<%- @getUrl('/img/mastercard-logo.svg')%>" width="100" alt="MasterCard Acceptance Mark">
@@ -63,7 +67,7 @@ title: ''
         <br>the MasterCard Acceptance Mark</h2>
     </div>
 </article>
-<article class="cover cover-a4">
+<article class="cover cover-a4" id="a4">
     <div class="cover--content">
         <h2>Share your money instantly by
         <br> sending a second card to your family
@@ -71,7 +75,7 @@ title: ''
         <br> the benefits of your card</h2>
     </div>
 </article>
-<article class="cover cover-a5">
+<article class="cover cover-a5" id="a5">
     <div class="cover--content">
         <h1>Join Boss Revolution Prepaid MasterCard</h1>
         <p>
@@ -105,7 +109,7 @@ title: ''
         </p>
     </div>
 </article>
-<article class="cover cover-a6">
+<article class="cover cover-a6" id="a6">
     <div class="cover--content">
         <h1>Free rewards</h1>
         <p>Free personalised card when buying or upgrading here<sup><a href="#note-2">*</a></sup></p>
@@ -118,7 +122,7 @@ title: ''
         </p>
     </div>
 </article>
-<article class="cover cover-a7">
+<article class="cover cover-a7" id="a7">
     <div class="cover--content">
         <h1>Services available for you in just one click!</h1>
         <ul>
@@ -132,5 +136,4 @@ title: ''
     </div>
 </article>
 
-
-<% #comment %>
+<%- @partial('vnav/vnav-index') %>

@@ -187,7 +187,11 @@ docpadConfig = {
 					# Development scripts
 					scripts: [
 						'/vendor/modernizr.js'
+						'/vendor/jquery.min.js'
+						#'/vendor/jquery.sticky.js'
+						'/vendor/fastclick.js'
 						'/js/init.js'
+						#'/vendor/60fps-scroll.js'
 					]
 
 			plugins:

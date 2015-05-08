@@ -1,0 +1,770 @@
+<form action="<%- @getUrl('/buy-now/step3/') %>" autocomplete="off" method="post" novalidate="novalidate">
+    <h1 class="txt_1_h1">BUY YOUR PRIME CARD</h1>
+    <div id="validationSummary" class="field-validation-error">
+
+    </div>
+    <div class="steps-pane">
+        <span class="steps_h2">STEP 1</span>
+        <span class="separator">»</span>
+        <span class="steps_h2 current">STEP 2</span>
+        <span class="separator">»</span>
+    </div>
+    <div class="form-styled form-fullwidth">
+        <div class="form-row content-block">
+            <h2>Personal Details</h2>
+        </div>
+        <div class="layout-table equal-columns with-gap wide-inputs">
+            <div class="layout-row">
+                <div class="layout-cell form-pane">
+                    <div class="form-row">
+                        <div class="lbl">Name</div>
+                        <div class="field">Mr. Paul Radzkov</div>
+                    </div>
+                    <div class="form-row">
+                        <div class="lbl">Email</div>
+                        <div class="field">radzkov@gmail.com</div>
+                    </div>
+                    <div class="form-row">
+                        <div class="lbl"><label for="EmbossMessage">Name or message on card</label></div>
+                        <div class="field">
+                            <select class="solSlct" id="EmbossMessage" name="EmbossMessage">
+                                <option value="PAUL RADZKOV">PAUL RADZKOV</option>
+                                <option value="HAPPY BIRTHDAY">HAPPY BIRTHDAY</option>
+                                <option value="HAPPY ANNIVERSARY">HAPPY ANNIVERSARY</option>
+                                <option value="CONGRATULATIONS">CONGRATULATIONS</option>
+                                <option value="BEST WISHES">BEST WISHES</option>
+                                <option value="GOOD LUCK">GOOD LUCK</option>
+                                <option value="THANK YOU">THANK YOU</option>
+                                <option value="I LOVE YOU">I LOVE YOU</option>
+                                <option value="FROM ME TO YOU">FROM ME TO YOU</option>
+                                <option value="REMEMBER ME">REMEMBER ME</option>
+                                <option value="SHOW ME THE MONEY">SHOW ME THE MONEY</option>
+                                <option value="YOU THE BOSS">YOU THE BOSS</option>
+                                <option value="GIRL POWER">GIRL POWER</option>
+                                <option value="COOL BABE">COOL BABE</option>
+                                <option value="GROOVY BABY">GROOVY BABY</option>
+                                <option value="I'M TOO SEXY">I'M TOO SEXY</option>
+                                <option value="MAKE MY DAY, PUNK">MAKE MY DAY, PUNK</option>
+                                <option value="FOLLOW THE MONEY">FOLLOW THE MONEY</option>
+                            </select>
+                            <span data-valmsg-replace="true" data-valmsg-for="EmbossMessage" class="lbl-hint">Get your name or a short message printed on the card.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-cell form-pane">
+                    <div class="form-row">
+                        <div class="lbl">
+                            <label for="BirthDate">Date of Birth  (dd/mm/yyyy)</label>
+                        </div>
+                        <div class="field">
+                            <span class="jq-dte"><input class="text-box single-line" data-val="true" data-val-date="The field Date of Birth  (dd/mm/yyyy) must be a date." data-val-required=" " id="BirthDate" name="BirthDate" type="text" value="" style="display: none;"><span class="jq-dte-inner"><input type="text" value="" class="jq-dte-day hint" aria-label="Day" style="width: 77px;"><span class="separator">/</span><input type="text" value="" class="jq-dte-month hint" aria-label="Month" style="width: 77px;"><span class="separator">/</span><input type="text" value="" class="jq-dte-year hint" aria-label="Year" style="width: 109px;"></span><span class="jq-dte-tooltip" style="display: none;"></span><span class="jq-dte-errorbox" style="display: none;"></span></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="lbl">
+                            <label for="ContactPhone">Home phone no.</label>
+                        </div>
+                        <div class="field">
+                            <input class="text-box single-line" data-val="true" data-val-atleastonerequired="Phone or Mobile is required" data-val-atleastonerequired-properties="ContactPhone,Mobile" data-val-regex=" " data-val-regex-pattern="^[+]*\d{10,15}" id="ContactPhone" name="ContactPhone" type="text" value="">
+                            <span class="field-validation-valid" data-valmsg-for="ContactPhone" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="lbl">
+                            <label for="Mobile">Mobile phone no.</label>
+                        </div>
+                        <div class="field">
+                            <input class="text-box single-line" data-val="true" data-val-atleastonerequired="Phone or Mobile is required" data-val-atleastonerequired-properties="ContactPhone,Mobile" data-val-regex=" " data-val-regex-pattern="^[+]*\d{10,15}" id="Mobile" name="Mobile" type="text" value="">
+                            <span class="field-validation-valid" data-valmsg-for="Mobile" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-table equal-columns wide-inputs">
+            <div class="layout-row">
+                <div class="layout-cell form-pane">
+                    <div class="form-row">
+                        <div class="lbl">
+                            <label for="SecurityQuestion"> Security Question</label>
+                        </div>
+                        <div class="field">
+                            <select class="solSlct" id="SecurityQuestion" name="SecurityQuestion">
+                                <option value="MDN_NAME">Your mother's maiden name?</option>
+                                <option value="TWN_BIRTH">Your place/town of birth?</option>
+                                <option value="PETS_NAME">Your favorite pet's name?</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-cell form-pane">
+                    <div class="form-row">
+                        <div class="lbl">
+                            <label for="SecurityAnswer">Answer</label>
+                        </div>
+                        <div class="field">
+                            <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="[a-zA-Z0-9 ]{4,21}" data-val-required=" " id="SecurityAnswer" name="SecurityAnswer" type="text" value="">
+                            <span class="field-validation-valid" data-valmsg-for="SecurityAnswer" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-styled form-fullwidth">
+        <div class="form-row content-block">
+            <h2 class="inlined">Address Details</h2>
+            <p class="inlined">Please let us know an address for the card to be sent to.</p>
+        </div>
+        <div class="address-form form-pane form-horizontal">
+            <div class="form-row">
+                <div class="lbl">
+                    <label for="PostCode">Postal Code</label>
+                </div>
+                <div class="field postcode">
+                    <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="^[A-Za-z]{1,3}\d{1,2}[A-Za-z]{0,1}[- ]{0,1}\d[A-Za-z]{2}$" data-val-required=" " id="PostCode" name="PostCode" type="text" value="">
+                    <span class="field-validation-error" data-valmsg-for="PostCode" data-valmsg-replace="true"><span for="PostCode" generated="true" class=""></span></span>
+                    <input type="submit" value="Find Address" class="btn_sbmit_imge" onclick="javascript:return enablePostCodeCreator('');">
+                </div>
+            </div>
+            <div class="form-row wide-inputs">
+                <div class="field">
+                    <span id="postcode_result_display">This postcode is not valid, please try again or enter your address manually</span>
+                </div>
+            </div>
+            <div class="form-row wide-inputs">
+                <div class="lbl">
+                    <label for="HouseName">House Name/Number</label>
+                </div>
+                <div class="field">
+                    <input class="text-box single-line" id="HouseName" name="HouseName" type="text" value="" disabled="">
+                    <span class="field-validation-valid" data-valmsg-for="HouseName" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="form-row wide-inputs">
+                <div class="lbl">
+                    <label for="Street">Street</label>
+                </div>
+                <div class="field">
+                    <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="^[#a-zA-Z0-9 \.,'-]*$" data-val-required=" " id="Street" name="Street" type="text" value="" disabled="">
+                    <span class="field-validation-valid" data-valmsg-for="Street" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="form-row wide-inputs">
+                <div class="lbl">
+                   <label for="Address1">Address line 1</label>
+                </div>
+                <div class="field">
+                    <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="^[#a-zA-Z0-9 \.,'-]*$" data-val-required=" " id="Address1" name="Address1" type="text" value="" disabled="">
+                    <span class="field-validation-valid" data-valmsg-for="Address1" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="form-row wide-inputs">
+                <div class="lbl">
+                    <label for="Address2">Address line 2</label>
+                </div>
+                <div class="field">
+                    <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="^[#a-zA-Z0-9 \.,'-]*$" id="Address2" name="Address2" type="text" value="" disabled="">
+                    <span class="field-validation-valid" data-valmsg-for="Address2" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="form-row wide-inputs">
+                <div class="lbl">
+                    <label for="City">City/Town</label>
+                </div>
+                <div class="field">
+                    <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="^[a-zA-Z0-9 \.-]*$" data-val-required=" " id="City" name="City" type="text" value="" disabled="">
+                    <span class="field-validation-valid" data-valmsg-for="City" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-styled form-fullwidth">
+        <div class="form-row content-block">
+            <h2>Payment Details</h2>
+        </div>
+        <div class="payment-details layout-table equal-columns wide-inputs">
+            <div class="layout-row">
+                <div class="layout-cell form-pane">
+                    <div class="form-row">
+                        <div class="lbl">
+                            <label for="CreditCardType">Card Type</label>
+                        </div>
+                        <div class="field">
+                            <select data-val="true" data-val-required=" " id="CreditCardType" name="CreditCardType">
+                                <option value="V">Visa</option>
+                                <option value="M">Mastercard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="lbl">
+                            <label for="CardHolderName">Card holder's name</label>
+                        </div>
+                        <div class="field">
+                            <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="[a-zA-Z]+ [a-zA-Z]+[ a-zA-Z]*" data-val-required=" " id="CardHolderName" name="CardHolderName" type="text" value="">
+                            <span class="field-validation-valid" data-valmsg-for="CardHolderName" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="lbl">
+                            <label for="ExpirationDate">Expiration Date</label>
+                        </div>
+                        <div class="field">
+                            <select class="solSlct" data-val="true" data-val-number="The field ExpirationMonth must be a number." data-val-required="The ExpirationMonth field is required." id="ExpirationMonth" name="ExpirationMonth">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option selected="selected" value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select class="solSlct" data-val="true" data-val-number="The field ExpirationYear must be a number." data-val-required="The ExpirationYear field is required." id="ExpirationYear" name="ExpirationYear">
+                                <option selected="selected" value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-cell form-pane">
+                    <div class="form-row">
+                        <div class="lbl">
+                            <label for="CCNumber">Credit Card Number</label>
+                        </div>
+                        <div class="field">
+                            <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="[\dX]{9,15}\d{4}" data-val-required=" " id="CCNumber" name="CCNumber" type="text" value="">
+                            <span class="field-validation-valid" data-valmsg-for="CCNumber" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="lbl">
+                            <label for="SecurityDigits">Card Validation Code</label>
+                            <span class="lbl-hint">The 3-digit number on the back of the card</span>
+                        </div>
+                        <div class="field">
+                            <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="\d{3,4}" data-val-required=" " id="SecurityDigits" name="SecurityDigits" type="text" value="">
+                            <span class="field-validation-valid" data-valmsg-for="SecurityDigits" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input id="Token" name="Token" type="hidden" value="">
+    <img id="imgLoading" src="/svpeuro/images/progress-circle.gif" align="absmiddle" style="display: none;">
+    <script type="text/javascript">
+        var ccnumberObj;
+        var cctokenObj;
+        var method = "CC";
+        var cctype;
+
+        var objToTokenize;
+        var params = params || {}
+        params.tokenized = false;
+        ccnumberObj = document.getElementById('CCNumber');
+        cctokenObj = document.getElementById('Token');
+        method = "CC";
+        cctype = document.getElementById('CreditCardType');
+
+        // when getting back to the page - remove the token
+
+        if (cctokenObj.value != "") maskCCNumber(ccnumberObj);
+
+
+        function removeToken() {
+
+            $("#Token").val("");
+
+        }
+
+        function maskCCNumber(obj) {
+            var val = obj.value;
+
+            if (val != "" && val.indexOf("X") == -1)
+                val = val.substr((val.substr(0, 1) != "9" ? 0 : 1), 2) + "XXXXXXXXXX" +
+                 val.substr(val.length - 4, 4);
+
+            obj.value = val;
+        }
+
+        // tokenization initialization
+
+
+        function Translate(val) {
+
+            switch (val) {
+                case "V":
+                    return "VISA";
+                case "M":
+                    return "MC";
+                case "A":
+                    return "AMEX";
+                case "D":
+                    return "DISC";
+                case "C":
+                    return "DINR";
+                case "B":
+                    return "JCB";
+                case "S":
+                    return "SWCH";
+            }
+            return "";
+        }
+
+
+
+        function MainGenerateNumber() {
+            try {
+
+                $("#imgLoading").show();
+                var isPageValid = false;
+                //alert("started tokeniz");
+                /*&nbsp;B vals = {"","V","M","A","D","B","I","S"};
+                string[] descs= {"Select Type","Visa","Mastercard","American Express","Discover","Carte Blanche","Diners", "Switch"}; */
+
+                var type = "CC";
+                var errObj = errObj || {}
+                if (cctokenObj.value == "") {
+                    //ccnumberObj.value.indexOf("X") == -1)
+
+                    objToTokenize = ccnumberObj;
+                    var cardType = Translate(cctype.value);
+                    errObj = ValidateCC(objToTokenize.value, cardType);
+
+                }
+                else {
+                    $("#imgLoading").hide();
+                    return true;
+                }
+                if (errObj.message != "") {
+                    addErrorsToValidationSummary(errObj.message);
+                    //invalidLabel.style.display = '';
+                    //displayError();
+                    $("#imgLoading").hide();
+                    return false;
+                }
+                if (!params.tokenized) {
+
+                    //alert("before tokenization:" + objToTokenize.value);
+                    cardSecure.getTokenAsync(type,
+                                    objToTokenize.value,
+                                    getToken, params);
+
+                    return false;
+                }
+                else
+                    return true;
+            }
+            catch (e) {
+                alert("General error:" + e);
+                return false;
+            }
+        }
+        function getToken(secureObj) {
+            try {
+                //alert("back");
+                if ((!secureObj.token || secureObj.token == "") && secureObj.errMessage) {
+                    alert("secure:" + secureObj.errMessage);
+                    return;
+                }
+                var type = "";
+                if (!secureObj.tokenCallbackParamsObject) {
+                    alert("No type for tokinization passed!");
+                    $("#imgLoading").hide();
+                    return;
+                }
+                type = secureObj.tokenCallbackParamsObject.type;
+                //alert("type:" + type + " token:" + secureObj.token );
+                objToTokenize = cctokenObj;
+
+                // set the value back as a token
+                objToTokenize.value = secureObj.token;
+                maskCCNumber(ccnumberObj);
+
+                params.tokenized = true;
+                $("form").submit();
+                return;
+
+            }
+            catch (e) {
+                alert('getToken returned:' + e.Message);
+            }
+        }
+
+
+    </script>
+    <script src="https://beastqa.idt.net/IDTHandlers/BeastHandler/BeastInfo.ashx?type=cc_info" type="text/javascript"></script>
+    <script src="https://beastqa.idt.net/IDTHandlers/JSHandler/JSScript.ashx?req=tokenizer" type="text/javascript"></script>
+
+    <div id="Terms" class="form-styled form-fullwidth">
+        <div class="form-row">
+            <div class="lbl">
+                <label for="PromoCode">Promotional Code</label>
+            </div>
+            <div class="field">
+                <input class="text-box single-line" data-val="true" data-val-regex=" " data-val-regex-pattern="[a-zA-Z 0-9\-]+" id="PromoCode" name="PromoCode" type="text" value="">
+                <span class="field-validation-valid" data-valmsg-for="PromoCode" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-row content-block">
+            <h2>Terms &amp; Conditions</h2>
+        </div>
+        <div class="form-row">
+            <div class="cbox">
+                <input data-val="true" data-val-required=" " id="chkTerms" name="chkTerms" type="checkbox" value="true">
+                <input name="chkTerms" type="hidden" value="false">
+            </div>
+            <div class="lbl-checkbox">
+                <label for="chkTerms">I have read and accept IDT Financial Service Limited's terms and conditions, including those concerning data processing. By doing so, I consent to the data I have registered being processed via other companies in IDT Financial Service Limited's group of companies, some of which are located outside of the European Union.</label> <a href="http://www.idtprime.com/terms_condition.html" target="_blank">Terms and Conditions</a>
+                <span class="field-validation-valid" data-valmsg-for="chkTerms" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="cbox">
+                <input data-val="true" data-val-required="The I do not wish to receive any marketing or promotional materials from IDT Financial Services Limited field is required." id="chkMarketing1" name="chkMarketing1" type="checkbox" value="true">
+                <input name="chkMarketing1" type="hidden" value="false">
+            </div>
+            <div class="lbl-checkbox">
+                <label for="chkMarketing1">I do not wish to receive any marketing or promotional materials from IDT Financial Services Limited</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="cbox">
+                <input data-val="true" data-val-required="The I would like to receive from time to time an information from our partners about products that may be interest to me. field is required." id="chkMarketing2" name="chkMarketing2" type="checkbox" value="true">
+                <input name="chkMarketing2" type="hidden" value="false">
+            </div>
+            <div class="lbl-checkbox">
+                <label for="chkMarketing2">I would like to receive from time to time an information from our partners about products that may be interest to me.</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="cbox">
+                <input data-val="true" data-val-required="The Register with Cashback field is required." id="chkInfo" name="chkInfo" type="checkbox" value="true">
+                <input name="chkInfo" type="hidden" value="false">
+            </div>
+            <div class="lbl-checkbox">
+                <label for="chkMarketing2">
+                    <label for="chkInfo">Register with Cashback</label>
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- end Terms -->
+    <div class="form-row form-actions">
+        <div class="wrapper-back">
+            <a href="<%- @getUrl('/buy-now/') %>">Back</a>
+        </div>
+        <div class="wrapper-forward">
+            <input type="submit" value="Proceed to Confirmation »" class="btn_sbmit_imge">
+            <input id="btnConfirmFdd" type="submit" value="Upgrade to MAX »" onclick="return setProductToMax()" class="btn_sbmit_imge">
+        </div>
+    </div>
+    <div id="confirm" visible="false" class="dialogB" style="display: none; position: fixed; left: 0px; top: 0px; height: 100%; width: 100%; z-index: 100; background-color: rgba(0,0,0,.5); background-repeat: repeat;">
+        <div class="popup-container" style="position:relative; top:5%; left:78px; margin: 0 auto; width:700px;">
+            <div class="popup-container-inner">
+                <div class="form-styled compact">
+                    <div class="form-row content-block" style="border-bottom: 1px solid #aa8b3d;">
+                        <h2>Order confirmation</h2>
+                    </div>
+                    <div class="layout-table with-gap equal-columns form-vertical">
+                        <div class="layout-row">
+                            <div class="layout-cell form-pane">
+                                <div class="form-row">
+                                    <div class="lbl">Billing/Delivery Details</div>
+                                </div>
+                                <div class="form-row">Mr. Paul Radzkov</div>
+                                <div class="form-row"></div>
+                                <div class="form-row"></div>
+                                <div class="form-row"></div>
+                                <div class="form-row">UNITED KINGDOM</div>
+                                <div class="form-row">radzkov@gmail.com</div>
+                                <div class="form-row"></div>
+                            </div>
+                            <div class="layout-cell form-pane">
+                                <div class="form-row">
+                                    <div class="lbl">Payment Details</div>
+                                </div>
+                                <div class="form-row">£10.00</div>
+                                <div class="form-row"></div>
+                                <div class="form-row"></div>
+                                <div class="form-row"></div>
+                                <div class="form-row">05/15</div>
+                                <div class="form-row">
+                                    <div class="lbl">Promotional Code</div>
+                                </div>
+                                <div class="form-row"></div>
+                                <div class="form-row"></div>
+                                <div class="form-row">
+                                    <div class="lbl">Tier</div>
+                                </div>
+                                <div class="form-row">Light Tier</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row form-pane form-totals">
+                        <span class="lbl">Total Amount</span>
+                        £16.95
+                    </div>
+                    <div class="form-actions">
+                        <input id="btnModify" type="submit" value="Edit" class="btn_sbmit_imge">
+                        <input id="btnFinalize" type="submit" value="Buy Now" class="btn_sbmit_imge">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input id="ProgramType" name="ProgramType" type="hidden" value="PLUS">
+    <input id="ScreenAction" name="ScreenAction" type="hidden" value="">
+    <input id="FingerprintHash" name="FingerprintHash" type="hidden" value="b5f823241d65e1d1c4a4c6a8b1d7c4aa57b067f116c48957dc8ca9247c00bbb3">
+    <input id="FingerprintRaw" name="FingerprintRaw" type="hidden" value="{browser:{&quot;webkit&quot;:true,&quot;version&quot;:42.0.2311.135},viewport:{&quot;width&quot;:1425,&quot;height&quot;:506},support:{&quot;ajax&quot;:true,&quot;boxModel&quot;:true,&quot;changeBubbles&quot;:true,&quot;checkClone&quot;:true,&quot;checkOn&quot;:true,&quot;cors&quot;:true,&quot;cssFloat&quot;:true,&quot;hrefNormalized&quot;:true,&quot;htmlSerialize&quot;:true,&quot;leadingWhitespace&quot;:true,&quot;noCloneChecked&quot;:true,&quot;noCloneEvent&quot;:true,&quot;opacity&quot;:true,&quot;optDisabled&quot;:true,&quot;style&quot;:true,&quot;submitBubbles&quot;:true,&quot;tbody&quot;:true},computer:{&quot;screenWidth&quot;:1440,&quot;screenHeight&quot;:900,&quot;OS&quot;:&quot;Apple MacOS&quot;,&quot;platform&quot;:MacIntel&quot;}}">
+    <input id="ShowPopup" type="hidden">
+    <input id="hidBDate" type="hidden">
+    <script type="text/javascript">
+
+         $(document).ready(function () {
+             //alert("doc.ready");
+             //onclick="return MainGenerateNumber(this)"
+
+             toggleDiv('confirm', ($("#ShowPopup").val() == "y" ? true : false));
+             if ($("#ShowPopup").val() != "y") {
+                 var hash = $.jFingerprint.getHash()
+                 var json = $.jFingerprint.getJSON()
+                 $("#FingerprintHash").val(hash);
+                 $("#FingerprintRaw").val(json);
+                 //alert(hash);
+             }
+
+             $('#BirthDate').datetextentry({
+                 min_year: '1900',
+                 max_date: function () { return this.get_date_old(18); },
+                 max_date_message: 'You must be 18 years old'
+             });
+
+             $('#BirthDate').datetextentry('set_date', $('#hidBDate').val());
+
+
+             if ($("#FirstName").val() == "")
+                 if ($("#FirstName").val() == "")
+
+                     jQuery.validator.methods.date = function (value, element) {
+                         var dateRegex = /^(0?[1-9]\/|[12]\d\/|3[01]\/){2}(19|20)\d\d$/;
+                         //alert("validate date:" + dateRegex.test(value));
+                         return this.optional(element) || dateRegex.test(value);
+                     };
+             $("#imgLoading").hide();
+
+             /*jQuery.validator.addMethod("enforcetrue", function (value, element, param) {
+             return element.checked;
+             });
+             jQuery.validator.unobtrusive.adapters.addBool("enforcetrue");*/
+
+             jQuery.validator.unobtrusive.adapters.add(
+            'atleastonerequired', ['properties'], function (options) {
+                options.rules['atleastonerequired'] = options.params;
+                options.messages['atleastonerequired'] = options.message;
+            }
+            );
+             jQuery.validator.addMethod('atleastonerequired', function (value, element, params) {
+                 var properties = params.properties.split(',');
+
+                 var values = $.map(properties, function (property, index) {
+                     var val = $('#' + property).val();
+                     return val != '' ? val : null;
+                 });
+                 return values.length > 0;
+             }, '');
+
+             $(document).on('change', '#CCNumber', function () {
+                 removeToken();
+             });
+
+
+             if ($('#Address1').val() == "")
+                 AddressDisable(true, "");
+
+             $("form").submit(function () {
+                 //alert("submit");
+
+                 try {
+                     if ($(this).valid()) {
+                         if (!validate())
+                             return false;
+                         if ($("#ScreenAction").val() == "finalize") {
+
+                             return true;
+                         }
+                         if ($("#confirm").is(':visible')) {
+
+                             return true;
+                         }
+                         if (MainGenerateNumber()) {
+                             //alert("submitting after tokenization");
+                             if ($("#ProgramType").val() == "PLUS")
+                                 $("#ScreenAction").val("save");
+                             else
+                                 $("#ScreenAction").val("finalize");
+                             $("#imgLoading").hide();
+                             return true; // openPopWin();
+                         }
+                         return false;
+
+                     }
+                 }
+                 catch (e) {
+                     alert("submit:" + e);
+                 }
+             });
+
+             $("#btnModify").click(function () {
+                 toggleDiv('confirm', false);
+
+                 return false;
+             });
+             $("#btnFinalize").click(function () {
+
+                 $("#ShowPopup").val("");
+                 $("#ScreenAction").val("finalize");
+                 toggleDiv('confirm', false);
+
+                 return true;
+             });
+
+
+
+         });
+         function setProductToMax() {
+             $("#ProgramType").val("MAX");
+             return true;
+         }
+         function AddressDisable(val, suffix) {
+
+             $('#HouseName' + suffix).prop('disabled', val);
+             $('#Street' + suffix).prop('disabled', val);
+             $('#Address1' + suffix).prop('disabled', val);
+             $('#Address2' + suffix).prop('disabled', val);
+             $('#City' + suffix).prop('disabled', val);
+
+
+         }
+         function openPopWin() {
+             toggleDiv('confirm', true);
+
+             return true;
+
+         }
+
+
+         function toggleDiv(divname, show) {
+
+             if (show) {
+                 $("#confirm").show();
+                 $("input").attr('disabled', 'disabled');
+                 $("select").attr('disabled', 'disabled');
+                 $("#btnFinalize").removeAttr('disabled');
+                 $("#btnModify").removeAttr('disabled');
+             }
+             else {
+                 $("#confirm").hide();
+                 $("input").removeAttr('disabled');
+                 $("select").removeAttr('disabled');
+             }
+             return false;
+         }
+         // tokenization initialization
+
+         function enablePostCodeCreator(suffix) {
+
+             var cp_obj = CraftyPostcodeCreate();
+
+             cp_obj.set("access_token", "4a81e-d6e96-ecabd-01164"); // your token here
+             cp_obj.set("elem_street1", "Street" + suffix);
+             cp_obj.set("elem_town", "City" + suffix);
+             cp_obj.set("elem_county", "County" + suffix);
+             cp_obj.set("elem_postcode", "PostCode" + suffix);
+             cp_obj.set("elem_house_num", "HouseName" + suffix);
+             cp_obj.set("busy_img_url", "/svpeuro/images/progress-circle.gif");
+             //cp_obj.set("debug_mode", "1");
+             cp_obj.set("result_elem_id", "postcode_result_display"+ suffix);
+             cp_obj.set("single_res_autoselect", 1);
+             AddressDisable(false, suffix);
+
+             cp_obj.doLookup();
+             btnfindClicked = true;
+             return false;
+
+
+         }
+
+
+         function addErrorsToValidationSummary(errMsg) {
+             var validationSummary = $('#validationSummary div.validation-summary-errors ul');
+
+             if (validationSummary && validationSummary.length == 0) {
+                 $('#validationSummary').append('<div class="validation-summary-errors"><ul></ul></div>');
+                 validationSummary = $('#validationSummary div.validation-summary-errors ul');
+             }
+
+
+             //alert(validationSummary + " " + errMsg);
+             validationSummary.append('<li>' + errMsg + '</li>');
+
+
+         }
+         function removeAllFromValidationSummary() {
+             var validationSummary = $('#validationSummary div.validation-summary-errors ul');
+             // remove first element as it was explicitely pushed from the control
+             // final version - remove all children
+             if (validationSummary && validationSummary.length > 0) {
+                 validationSummary.find("li").remove();
+
+             }
+         }
+         function validate() {
+
+             var err = false;
+
+             try {
+
+                 removeAllFromValidationSummary();
+
+                 if (!$("#chkTerms").is(':checked')) {
+                     addErrorsToValidationSummary("Terms & Conditions have to be checked");
+                     validationSummary.focus();
+                     return false;
+                 }
+
+
+                 if ($.trim($("#ContactPhone").val()) == "" &&
+                $.trim($("#Mobile").val()) == "") {
+                     addErrorsToValidationSummary("Mobile or Landline phone is required");
+                     validationSummary.focus();
+                     return false;
+                 }
+
+
+             }
+             catch (e)
+           { alert('validate:' + e.Message); }
+             // add birth date compare
+             return !err;
+         }
+
+
+    </script>
+</form>
