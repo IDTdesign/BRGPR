@@ -134,14 +134,44 @@ title: ''
 </article>
 <article class="cover cover-a7" id="a7">
     <div class="cover--content">
-        <h1>Services available for you in just one click!</h1>
-        <ul>
-            <li>Buy it and load money instantly</li>
-            <li>Get you free personalized card now</li>
-            <li>Share a card with your loved ones</li>
-            <li>Manage your finances, follow your expenses</li>
-            <li>Store locator: more than 20.000 locations</li>
-            <li>Earn Free minutes to call back home</li>
+        <h1 class="txt-centered">Services available for you in just one click!</h1>
+        <ul class="services-list">
+            <li class="services-list--item">
+                <a href="#" class="services-list--link">
+                    <img src="<%- @getUrl('/img/services_01.png')%>" width="115" height="97" srcset="<%- @getUrl('/img/services_01@2x.png')%> 2x" alt="">
+                    <p>Buy it and load money instantly</p>
+                </a>
+            </li>
+            <li class="services-list--item">
+                <a href="#" class="services-list--link">
+                    <img src="<%- @getUrl('/img/services_02.png')%>" width="115" height="97" srcset="<%- @getUrl('/img/services_02@2x.png')%> 2x" alt="">
+                    <p>Get you free personalized card now</p>
+                </a>
+            </li>
+            <li class="services-list--item">
+                <a href="#" class="services-list--link">
+                    <img src="<%- @getUrl('/img/services_03.png')%>" width="115" height="97" srcset="<%- @getUrl('/img/services_03@2x.png')%> 2x" alt="">
+                    <p>Share a card with your loved ones</p>
+                </a>
+            </li>
+            <li class="services-list--item">
+                <a href="#" class="services-list--link">
+                    <img src="<%- @getUrl('/img/services_04.png')%>" width="115" height="97" srcset="<%- @getUrl('/img/services_04@2x.png')%> 2x" alt="">
+                    <p>Manage your finances, follow your expenses</p>
+                </a>
+            </li>
+            <li class="services-list--item">
+                <a href="#" class="services-list--link">
+                    <img src="<%- @getUrl('/img/services_05.png')%>" width="115" height="97" srcset="<%- @getUrl('/img/services_05@2x.png')%> 2x" alt="">
+                    <p>Store locator: more than 20.000 locations</p>
+                </a>
+            </li>
+            <li class="services-list--item">
+                <a href="#" class="services-list--link">
+                    <img src="<%- @getUrl('/img/services_06.png')%>" width="115" height="97" srcset="<%- @getUrl('/img/services_06@2x.png')%> 2x" alt="">
+                    <p>Earn Free minutes to call back home</p>
+                </a>
+            </li>
         </ul>
     </div>
 </article>
