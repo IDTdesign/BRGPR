@@ -14,6 +14,16 @@ title: ''
 <article class="cover cover-a2" id="a2">
     <div class="cover--content">
         <h1>A CARD for all your needs</h1>
+        <figure class="card-slider">
+            <img class="card-slider--item" src="<%= @getUrl('/img/iStock_000043126058Small.png') %>" alt="">
+            <img class="card-slider--item" src="<%= @getUrl('/img/iStock_000040111546Small.png') %>" alt="">
+            <img class="card-slider--item" src="<%= @getUrl('/img/iStock_000026723218Small.png') %>" alt="">
+            <img class="card-slider--item" src="<%= @getUrl('/img/iStock_000020604073Small.png') %>" alt="">
+            <img class="card-slider--item" src="<%= @getUrl('/img/iStock_000015757049Small.png') %>" alt="">
+            <img class="card-slider--item" src="<%= @getUrl('/img/iStock_000014437183Small.png') %>" alt="">
+            <img class="card-slider--item" src="<%= @getUrl('/img/iStock_000010387587Small.png') %>" alt="">
+            <img class="card-slider--bg" src="<%= @getUrl('/img/0001.jpg') %>" alt="Boss Revolution card">
+        </figure>
         <ul class="product-list">
             <li class="product--item">
                 <a href="<%= @getUrl('/choose-your-card/#express-card') %>" class="product--link">
