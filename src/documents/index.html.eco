@@ -49,7 +49,7 @@ title: ''
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--persmax"></use>
                     </svg>
                     <h3 class="product--name"><span>Personal Max<sup>*</sup></span></h3>
-                    <p class="product--descr">reloadable up to <br> 12,000 per year</p>
+                    <p class="product--descr">reloadable up to <br> £12,000 per year</p>
                 </a>
             </li>
             <li class="product--item">
@@ -57,8 +57,8 @@ title: ''
                     <svg class="i i--family">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--family"></use>
                     </svg>
-                    <h3 class="product--name"><span>Family<sup>*</sup></span></h3>
-                    <p class="product--descr">two cards for sharing <br> money Instantly</p>
+                    <h3 class="product--name"><span>Family Max<sup>*</sup></span></h3>
+                    <p class="product--descr">two cards for sharing money instantly</p>
                 </a>
             </li>
         </ul>
@@ -69,20 +69,24 @@ title: ''
 </article>
 <article class="cover cover-a3" id="a3">
     <div class="cover--content">
-        <h2>
+        <h2 class="tagline">
         <img src="<%- @getUrl('/img/mastercard-logo.svg')%>" width="100" alt="MasterCard Acceptance Mark">
         <br>Make everyday purchases,
-        <br>pay bills and shop online,
-        <br>anywhere you see
-        <br>the MasterCard Acceptance Mark</h2>
+        pay bills and shop online,
+        anywhere you see
+        the MasterCard Acceptance Mark</h2>
     </div>
 </article>
 <article class="cover cover-a4" id="a4">
     <div class="cover--content">
-        <h2>Share your money instantly by
-        <br> sending a second card to your family
-        <br> or friends abroad. They will enjoy all
-        <br> the benefits of your card</h2>
+        <h2 class="tagline">Share your money instantly
+        by sending a second card to your family
+        or friends abroad<sup>*</sup>. They will enjoy all
+        the benefits of your card</h2>
+
+        <p id="note-a3">
+            <small>* Please make sure you upgrade your card to this level.</small>
+        </p>
     </div>
 </article>
 <article class="cover cover-a5" id="a5">
@@ -106,10 +110,10 @@ title: ''
             </svg>
         </p>
         <ul>
-            <li>Reloadable</li>
+            <li>Reloadable<sup>*</sup></li>
             <li>No credit checks - No hidden fees - No bank account</li>
             <li>First Month FREE</li>
-            <li>Online and offline shopping</li>
+            <li>In-Store and Online shopping</li>
             <li>Add funds in over 20,000 locations across UK</li>
         </ul>
         <p>
@@ -117,18 +121,21 @@ title: ''
             <a href="#" class="btn btn-cta">Upgrade Now</a>
             <a href="#" class="btn btn-cta">Register Now</a>
         </p>
+        <p id="note-a4">
+            <small>* available once upgraded</small>
+        </p>
     </div>
 </article>
 <article class="cover cover-a6" id="a6">
     <div class="cover--content">
         <h1>Free rewards</h1>
-        <p>Free personalised card when buying or upgrading here<sup><a href="#note-2">*</a></sup></p>
+        <p>Free personalised card when buying or upgrading here<sup><a href="#note-a6">*</a></sup></p>
         <p>International Calls. Receive up to 100 minutes FREE on every card load</p>
-        <p>£0FEE during the first month</p>
+        <p>£0 FEE during the first month</p>
         <p>Use your promo code to get 3 months free. Look for Boss Revolution Promo Codes and enjoy special features when buying or upgrading your card</p>
 
-        <p id="note-2">
-            <small>* If you buy and reload online with more than £30</small>
+        <p id="note-a6">
+            <small>* Valid for customers who buy and reload Online with more than £30</small>
         </p>
     </div>
 </article>
@@ -151,7 +158,7 @@ title: ''
             <li class="services-list--item">
                 <a href="#" class="services-list--link">
                     <img src="<%- @getUrl('/img/services_03.png')%>" width="115" height="97" srcset="<%- @getUrl('/img/services_03@2x.png')%> 2x" alt="">
-                    <p>Share a card with your loved ones</p>
+                    <p>Share a card with your loved ones<sup>*</sup></p>
                 </a>
             </li>
             <li class="services-list--item">
@@ -173,6 +180,9 @@ title: ''
                 </a>
             </li>
         </ul>
+        <p id="note-a7">
+            <small>* Upgrade your card to FAMILY MAX and benefit of a second Card.</small>
+        </p>
     </div>
 </article>
 

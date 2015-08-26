@@ -180,6 +180,7 @@ docpadConfig = {
 
 					# Development styles
 					styles: [
+						'http://fonts.googleapis.com/css?family=Work+Sans:400,200,600'
 						'/vendor/normalize.css'
 						'/css/template.css'
 					]
@@ -196,7 +197,7 @@ docpadConfig = {
 
 			plugins:
 				grunt:
-					writeAfter: ["default"]
+					writeAfter: false
 					writeBefore: false
 					renderBefore: false
 					renderAfter: false
@@ -211,6 +212,7 @@ docpadConfig = {
 					# The website's styles
 					# See also Environments section below for development styles
 					styles: [
+						'http://fonts.googleapis.com/css?family=Work+Sans:400,200,600'
 						'/css/output.min.css'
 					]
 
@@ -231,6 +233,7 @@ docpadConfig = {
 
 					# Development styles
 					styles: [
+						'http://fonts.googleapis.com/css?family=Work+Sans:400,200,600'
 						'/css/output.min.css'
 					]
 
