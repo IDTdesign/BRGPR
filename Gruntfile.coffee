@@ -245,6 +245,10 @@ module.exports = (grunt) ->
 			icons:
 				files: 'src/files/icons/svg-icons.js':['src/files/icons/svg-defs.svg']
 
+		watch:
+			less:
+				files: ['src/files/css/**/*.less']
+				tasks: ['default']
 
 		'ftp-deploy':
 			build:
@@ -271,6 +275,7 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-modernizr'
 	grunt.loadNpmTasks 'grunt-ftp-deploy'
 	grunt.loadNpmTasks 'grunt-contrib-copy'
+	grunt.loadNpmTasks 'grunt-contrib-watch'
 	grunt.loadNpmTasks 'grunt-newer'
 	grunt.loadNpmTasks 'grunt-contrib-imagemin'
 	grunt.loadNpmTasks 'grunt-recess'
@@ -284,4 +289,5 @@ module.exports = (grunt) ->
 	grunt.registerTask 'svgicons',      ['imagemin:icons', 'svgstore', 'svg2string']
 	grunt.registerTask 'imageoptim',    ['newer:imagemin:src']
 	grunt.registerTask 'production',    ['clean:out', 'copy', 'less:out', 'cssmin', 'autoprefixer:static', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean:less']
+	grunt.registerTask 'watchless',     ['default', 'watch:less']
 	grunt.registerTask 'default',       ['copy', 'less:out', 'autoprefixer:dev']
