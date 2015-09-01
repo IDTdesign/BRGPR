@@ -166,6 +166,8 @@ module.exports = (grunt) ->
 		clean:
 			less:
 				'out/css/*.less'
+			out:
+				'out/*.*'
 
 		#generates custom modernizr build from site css
 		modernizr:
@@ -211,9 +213,9 @@ module.exports = (grunt) ->
 				# You can override this by defining a "files" array below.
 				files:
 					src: [
-						'src/documents/**/*.less'
-						'src/documents/**/*.css'
-						'src/documents/**/*.js'
+						'src/files/css/**/*.less'
+						'src/files/css/**/*.css'
+						'src/files/css/**/*.js'
 					]
 
 				# This handler will be passed an array of all the test names passed to the Modernizr API, and will run after the API call has returned
@@ -281,5 +283,5 @@ module.exports = (grunt) ->
 	grunt.registerTask 'lint',          ['recess', 'htmllint']
 	grunt.registerTask 'svgicons',      ['imagemin:icons', 'svgstore', 'svg2string']
 	grunt.registerTask 'imageoptim',    ['newer:imagemin:src']
-	grunt.registerTask 'production',    ['copy', 'less:out', 'cssmin', 'autoprefixer:static', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean']
+	grunt.registerTask 'production',    ['clean:out', 'copy', 'less:out', 'cssmin', 'autoprefixer:static', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean:less']
 	grunt.registerTask 'default',       ['copy', 'less:out', 'autoprefixer:dev']
