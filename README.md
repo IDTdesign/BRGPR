@@ -13,6 +13,12 @@
     ```
     docpad run
     ```
+    
+    for optimizing rendering speed less compilation in development made as separate task:
+    
+    ```
+    grunt watchless
+    ```
 
 4. Open in browser [http://localhost:9778](http://localhost:9778)
 
