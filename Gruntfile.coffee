@@ -288,6 +288,6 @@ module.exports = (grunt) ->
 	grunt.registerTask 'lint',          ['recess', 'htmllint']
 	grunt.registerTask 'svgicons',      ['imagemin:icons', 'svgstore', 'svg2string']
 	grunt.registerTask 'imageoptim',    ['newer:imagemin:src']
-	grunt.registerTask 'production',    ['clean:out', 'copy', 'less:out', 'cssmin', 'autoprefixer:static', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean:less']
+	grunt.registerTask 'production',    ['copy', 'less:out', 'cssmin', 'autoprefixer:static', 'htmlmin', 'modernizr', 'uglify', 'imagemin:out', 'clean:less']
 	grunt.registerTask 'watchless',     ['default', 'watch:less']
 	grunt.registerTask 'default',       ['copy', 'less:out', 'autoprefixer:dev']
