@@ -92,7 +92,7 @@ title: ''
 <article class="cover cover-a5" id="a5">
     <div class="cover--content">
         <h1>Join Boss Revolution Prepaid MasterCard</h1>
-        <p>
+        <p class="join-icons">
             <svg class="i i--express">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i--express"></use>
             </svg>

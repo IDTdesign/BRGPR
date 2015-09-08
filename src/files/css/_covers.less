@@ -64,6 +64,7 @@
     background-color: #4C473A;
     background-position: 50% 100%;
     background-image: url(../img/wallet_portrait.jpg);
+    box-shadow: inset 0px 5px 93px 87px rgba(0,0,0,0.76);
 
     .cover--content {
         padding-bottom: 0;
@@ -83,13 +84,13 @@
     }
 
     .title-bg {
-        margin: 1em -@pad_hor 0;
-        padding: @pad_hor;
+        margin: 1em -@pad_hor_big 45px;
+        padding: 15px 100px;
         background-color: rgba(255, 0, 0, 0.6);
 
         @media @xsm {
-            margin: 1em -@pad_hor_big 0;
-            padding: @pad_hor @pad_hor_big;
+            margin: 1em -@pad_hor_big 45px;
+            padding: 15px 100px;
         }
     }
 }
@@ -143,7 +144,15 @@
     @media @md {
 
         .cover--content {
-            margin-left: 40vw;
+            margin-left: 55vw;
+
+            .join-icons{
+                text-align: @align_center;
+
+                svg{
+                margin-left: 20px;
+                }
+            }
         }
     }
 }
